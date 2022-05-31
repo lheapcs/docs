@@ -1,14 +1,12 @@
+<section class="setup partner" markdown="1">
 
-# Capsule v2 #
+## Partner Setup
 
-Partner Setup
--------------
+<div class="section-content" markdown="1">
 
-Capsule v2 uses OAuth 2. You should sign up for an application on Capsule first and get an OAuth client ID and client secret.
+Capsule v2 uses OAuth 2. Sign up for an application on Capsule first and get an ``OAuth Client ID`` and ``Client Secret``.
 
-Here is the official documentation for creating a Capsule OAuth 2 app:
-
-[https://developer.capsulecrm.com/v2/overview/authentication#oauth-2](https://developer.capsulecrm.com/v2/overview/authentication#oauth-2)
+See the [Capsule documentation](https://developer.capsulecrm.com/v2/overview/authentication#oauth-2) for details.
 
 1. Register a free Capsule account; or log into your existing account if you already have one.
 2. Go to [https://developer.capsulecrm.com/clients/new ](https://developer.capsulecrm.com/clients/new)
@@ -27,6 +25,17 @@ Here is the official documentation for creating a Capsule OAuth 2 app:
 
     **Application Type**: Web Application
 
+</div>
+
+</section>
+
+<section class="setup partner" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+
 3. Go to Cyclr Console (https://yourCyclrInstance/console) > Connectors > Connector Library > Capsule v2 > Setup
 
     **Client ID**: This is the Client ID displayed after you create the Capsule app
@@ -39,9 +48,22 @@ Here is the official documentation for creating a Capsule OAuth 2 app:
 
 Your Capsule v2 connector is now set up! You can test it by installing it in one of your user accounts.
 
-API Integration Guide
----------------------
+</div>
 
-Capsule v2 connector uses OAuth 2 Authorisation Code flow. It requires your end users to sign into Capsule and grant Cyclr access to their account.
+</section>
+
+<section class="setup partner" markdown="1">
+
+## API Integration
+
+<div class="section-content" markdown="1">
+
+Capsule v2 connector uses OAuth 2 Authorisation Code flow. 
+
+Your end users must sign into Capsule and grant Cyclr access to their account.
 
 To do this, call _/UpdateAccountConnectorOAuth_ with a one-time sign-in token.
+
+</div>
+
+</section>

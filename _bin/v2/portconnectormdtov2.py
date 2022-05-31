@@ -23,6 +23,7 @@ md_dict = {
 "breathehr":"breathe-hr",
 "calendly_setup":"calendly",
 "CampusIvy":"campusivy",
+"capsule-v2":"capsule",
 "Cardpointe":"cardpointe",
 "casavi_setup":"casavi",
 "Cavelo":"cavelo",

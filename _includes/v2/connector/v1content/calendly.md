@@ -1,7 +1,11 @@
 
-## Setup
+<section class="setup partner" markdown="1">
 
-To authenticate the Calendly connector you first need to register an OAuth app.
+## Partner Setup
+
+<div class="section-content" markdown="1">
+
+To authenticate the Calendly connector, register an OAuth app.
 
 1. Go to <https://calendly.com/integrations/api_webhooks>
 
@@ -13,7 +17,15 @@ To authenticate the Calendly connector you first need to register an OAuth app.
 
 4. Once you have completed your app registration you will receive your authentication credentials via LastPass. For this reason it is important that the email address you register for this app is the same as that of your LastPass account
 
-### Connector Setup
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Once you have your OAuth credentials:
 
@@ -30,3 +42,7 @@ Once you have your OAuth credentials:
 > Note: If you are already logged into Calendly you might not be prompted to log in at this point. This is due to the session cookie your browser stores
 
 You will be redirected to Cyclr where the connector is now authenticated and ready to use.
+
+</div>
+
+</section>

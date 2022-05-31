@@ -1,18 +1,22 @@
+<section class="setup partner" markdown="1">
 
-Partner Setup
----------------
+## Partner Setup
 
-Candidate Hub makes use of OAuth 2.0 for remote API access. 
+<div class="section-content" markdown="1">
 
-For your reference, [here](https://developer.mautic.org/#rest-api) is a link to the Mautic API documentation.
+Candidate Hub uses OAuth 2.0 for remote API access. 
 
-Before Starting
----------------
+See the [Mautic API documentation](https://developer.mautic.org/#rest-api) for details.
 
-You will need to allow API access in your instance of Candidate Hub. To do this, go to settings and under the configuration tab, select API Settings, then yes under "API enabled?"
+### Before Starting
 
-Adding a New Application
----------------
+Enable API access in your instance of Candidate Hub: 
+
+- Go to Settings -> Configuration
+- Select API Settings
+- Select ``yes`` under **API enabled?**
+
+### Adding a New Application
 
 After you've allowed API access, you will need to follow these steps to be able to use the API with cyclr.
 
@@ -30,8 +34,13 @@ Step 3a - The Redirect URL should be https://<span></span>{service domain}/conne
 
 Step 4 - You'll be taken back to the API Credentials page and be provided with both a Public Key and a Secret Key.
 
-Connector Setup
----------------
+</div>
+
+</section>
+
+<section class="setup partner" markdown="1">
+
+<div class="section-content" markdown="1">
 
 The Connector now can be installed using the credentials obtained in the above steps:
 
@@ -43,4 +52,6 @@ You will also need to add the subdomain of your application to the connector whe
 
 You will then be prompted to log in, select your CandidateHub account information and authorize access to the connector.
 
+</div>
 
+</section>
