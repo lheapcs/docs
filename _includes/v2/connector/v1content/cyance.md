@@ -1,15 +1,27 @@
 
-# Partner Setup
+<section class="setup partner" markdown="1">
 
-You need the following details to set up the Cyance connector within Cyclr:
+## Partner Setup
 
--   The company name of the account.
--   The username for the account.
--   The password for the account.
+<div class="section-content" markdown="1">
 
-You can request access to the Cyance API by contacting them [here](customerservices@cyance.com).
+You need the following account details to set up the Cyance connector within Cyclr:
 
-# Cyclr Setup
+-   Company name
+-   Username
+-   Password
+
+Contact [Cyance API](customerservices@cyance.com) to request API access.
+
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 To set up the Cyance connector within Cyclr:
 
@@ -25,3 +37,8 @@ To set up the Cyance connector within Cyclr:
 7. Select **Next**.
 
 The Cyance connector is now set up! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>
+

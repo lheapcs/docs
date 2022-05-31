@@ -1,36 +1,53 @@
 
-# Clover #
+<section class="setup partner" markdown="1">
 
-This guide is for setting up and installing the [Clover](https://cyclr.com/integrate/clover) connector.
+## Partner Setup
 
-#### Setup in Clover
+<div class="section-content" markdown="1">
+
+See [Clover](https://cyclr.com/integrate/clover) for details of Clover intregration.
 
 Go to [clover.com/developers](https://www.clover.com/developers/) and create a new application.  
-In the new application go to Settings and:
 
-*   Update the Web Configuration setting Site URL to be your Cyclr Service Domain. Available from Cyclr Console > Settings > General Settings
-*   Update the permissions setting checking everything other than "Process Credit Cards"
-*   The App ID is the Client ID and the App Secret is the Client Secret.  Copy them as they are needed later.
+- Get your Cyclr Service Domain from Cyclr Console > Settings > General Settings
+- In your new Clover application, go to *Settings* 
+- Update the Web Configuration setting `Site URL` to your Cyclr Service Domain. 
+- Update the permissions setting checking everything other than *Process Credit Cards*
+- The App ID is the `Client ID` and the App Secret is the `Client Secret`.  Not these for the Cyclr setup.
 
-#### Setup in Cyclr
+</div>
 
-If you don't need to use webhooks, login to your Cyclr Console and in the top menu go to Connectors > Connector Library. Find the Clover connector in the list and click its Setup button.
+</section>
 
-*   Set the Client ID as the App ID
-*   Set the Client Secret as the App Secret
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+### No webhooks
+
+If you don't need to use webhooks:
+
+- login to your Cyclr Console
+- in the top menu go to *Connectors > Connector Library*
+- find the Clover connector in the list and click its *Setup* button.
+- Set the `Client ID` as the App ID
+- Set the `Client Secret` as the App Secret
 
 #### Install/Authenticate a connector
 
-*   Enter the domain for Clover, either US or Europe
-*   Click the sign in button
-*   If required in the popup, install the application, then close the popup and the sign in button again.
+- Enter the domain for Clover, either US or Europe
+- Click the sign in button
+- If required in the popup, install the application, then close the popup and the sign in button again.
 
-#### Webhooks
+### Webhooks
 
-Clover only supports sending webhooks to one webhook step per Clover application. To use webhooks with Cyclr you will need to create a separate Application in [clover.com/developers](https://www.clover.com/developers/) for each connector install.
+Clover only supports sending webhooks to one webhook step per Clover application. 
 
-Setup Webhook
--------------
+To use webhooks with Cyclr, create a separate Application in [clover.com/developers](https://www.clover.com/developers/) for each connector install.
+
+#### Setup Webhook
 
 1.  Add the Clover Event Webhook step to the cycle
 2.  Run the cycle
@@ -43,3 +60,7 @@ Setup Webhook
 Enable the subscriptions that you wish to receive events for.
 
 **Each subscription requires the corresponding read permission. If you change permissions after a merchant installs your app, the permissions won't update for that merchant until the merchant uninstalls and reinstalls the app.**
+
+</div>
+
+</section>

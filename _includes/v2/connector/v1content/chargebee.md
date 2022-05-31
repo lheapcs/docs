@@ -1,5 +1,9 @@
 
-## Chargebee Setup
+<section class="setup partner" markdown="1">
+
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 ### Setting up your Account
 
@@ -7,11 +11,19 @@ To authenticate the connector you need your Chargebee [Domain name](https://www.
 
 You will obtain your Domain name once you've signed up to Chargebee. A "Complete Account Setup" email will be sent to your email ID. Click the link in the email to setup your password and domain name.
 
-Once you've signed into your account you will be able to get your API Key by selecting 'Settings' > 'Configure Chargebee' > 'API Keys and Webhooks' > 'API Keys'. Any existing API keys are listed.
+On your Chargebee site, go to 'Settings' > 'Configure Chargebee' > 'API Keys and Webhooks' > 'API Keys'. Any existing API keys are listed.
 
-For further information setting up API Keys, please see the [Official Chargebee documentation](https://www.chargebee.com/docs/2.0/api_keys.html).
+For further information setting up API Keys, see the [Official Chargebee documentation](https://www.chargebee.com/docs/2.0/api_keys.html).
+
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
 
 ## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your Chargebee connector within Cyclr:
 
@@ -29,7 +41,15 @@ Enter the following values:
 
 Your Chargebee Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
 
+</div>
+
+</section>
+
+<section class="userguide" markdown="1">
+
 ## User Guide
+
+<div class="section-content" markdown="1">
 
 ### Configuring Custom Fields
 
@@ -110,3 +130,9 @@ Make sure to add these fields to all required methods e.g GET & UPDATE.
    - **Data Type** - You can optionally define a data type for your field. If it is datetime then add the subtype to allow for type conversions between different standards.
 
 Your Meta Data Custom fields are now setup!
+
+
+</div>
+
+</section>
+

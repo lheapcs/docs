@@ -1,5 +1,9 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
+
+<div class="section-content" markdown="1">
 
 ### Login / Sign Up
 
@@ -26,7 +30,15 @@ For your API integrations to work, you must:
 
 For further information, please see the [Official Caspio documentation](https://howto.caspio.com/).
 
+</div>
+
+</section>
+
+<section class="setup partner" markdown="1">
+
 ## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your Caspio within Cyclr:
 
@@ -59,3 +71,7 @@ In Cyclr:
 3. When some categories are expanded (to reveal their methods) a copy button will appear below the category name.
 4. Once you press this button, you will be able to select which item to create the Custom Category for (For example a specified Table).
 5. Now when you return to your Cycle editor, you will see the new category (marked with a star), which will automatically connect with the object that was assigned to it.
+
+</div>
+
+</section>

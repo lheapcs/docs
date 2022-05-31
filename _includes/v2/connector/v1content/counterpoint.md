@@ -1,15 +1,32 @@
 
-## Counterpoint ##
+<section class="setup partner" markdown="1">
 
-This document will explain what is needed to setup access to Counterpoint and install the connector.
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 ### Authentication Details Setup ###
 1. Create a new company user through your Counterpoint portal.
-2. Apply for developer API Keys by contacting NCR. More information about this can be found [here](https://github.com/NCRCounterpointAPI/APIGuide/blob/master/InstallationAndConfiguration/Licensing.md).
+2. Contact NCR to apply for developer API Keys. 
 
-### Connector Setup ###
-In the connector setup enter your server URL and API Key. The server URL should have the following format: "https://{URL}:{Port}".
+See the [Counterpoint installation and configuration guide](https://github.com/NCRCounterpointAPI/APIGuide/blob/master/InstallationAndConfiguration/Licensing.md) for more details.
 
-Now enter the company user login details. The username will start with the company name, followed by a period and then the username. For example: "{CompanyName}.{UserName}".
+</div>
 
-More information about Authorization can be found [here](https://github.com/NCRCounterpointAPI/APIGuide/blob/master/Basics/Requests.md#authorization).
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+- Go to connector setup
+- Enter your server URL and `API Key`. The server URL has the format: "https://{URL}:{Port}"
+- Enter the company user login details. The username has the format: `{company name}.{username}`. 
+
+See the [Counterpoint authorisation documentation](https://github.com/NCRCounterpointAPI/APIGuide/blob/master/Basics/Requests.md#authorization) for more details.
+
+</div>
+
+</section>

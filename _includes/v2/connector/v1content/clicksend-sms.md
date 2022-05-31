@@ -1,11 +1,13 @@
 
-## Partner Setup ##
+<section class="setup partner" markdown="1">
 
-This document will explain what is needed to setup access to ClickSend and install the connector.
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 ### Access Token ###
 
-To retrieve your ClickSend access token you must log in to the ClickSend dashboard and open your *API Credentials* modal. How to do this is pictured below.
+To retrieve your ClickSend Access Token, login to the ClickSend dashboard . Open your *API Credentials* modal. 
 
 ![](./images/clicksend1.png)
 
@@ -13,6 +15,20 @@ To retrieve your ClickSend access token you must log in to the ClickSend dashboa
 
 Copy the `API Key` field and continue to the next step.
 
-### Connector Setup ###
- In the connector setup enter your ClickSend username, and then the `API Key` you copied above as the password.
+Get your `Client ID`, `Secret` and `Base URL` for the API from your system administator.
 
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+In the connector setup enter your ClickSend username, and then the `API Key` you copied above as the password.
+
+</div>
+
+</section>

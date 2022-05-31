@@ -7,7 +7,7 @@ icon: https://my.cyclr.com/api/ConnectorIcon/12270
 default_header: false
 category: Customer Experience
 categories: [Customer Experience,Developer Tools,Support]
-showv1content: false
+showv1content: true
 ---
 {% assign connectordata = site.data.v2.connectors.connector-document360 %}
 {% assign v1content = "document360.md" %}

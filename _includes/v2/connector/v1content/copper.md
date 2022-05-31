@@ -1,8 +1,19 @@
 
-## API Key ##
+<section class="setup partner" markdown="1">
 
-The Copper connector is authenticated using an API key. You can generate an API key after logging into your Copper account. You need to go to:
+## Partner Setup
 
- Settings > Integrations > API Keys
+<div class="section-content" markdown="1">
 
-You will need both the API key and the user email address that created the key when setting up the connector in Cyclr.
+- Login to your Copper account
+- Go to *Settings > Integrations > API Keys*
+- Generate the `API Key`. 
+
+Note API key and the user email address that created the key when setting up the connector in Cyclr.
+
+</div>
+
+</section>
+
+
+

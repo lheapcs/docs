@@ -1,11 +1,14 @@
+<section class="setup partner" markdown="1">
 
-Club Ready Setup
----------------
-**ApiKey Setup**
+## Partner Setup
 
-In order to access the API, you will need an 'API Key' configured, please email support@clubready.com to request more information and obtain an API Key. You will need to sign an agreement.
+<div class="section-content" markdown="1">
 
-**How to find your Store Id**
+### ApiKey Setup
+
+Email support@clubready.com to request more information including your `API Key`. You will need to sign an agreement.
+
+### How to find your Store Id
 
 * Log in to your ClubReady account.
 * Click on your profile image on the top right.
@@ -13,8 +16,16 @@ In order to access the API, you will need an 'API Key' configured, please email 
 
 ![](./images/clubready1.png)
 
-Connector Setup
----------------
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
 The Connector can be installed using the credentials obtained in the above steps:
 
 **API Key**: `your_api_key`
@@ -23,8 +34,13 @@ The Connector can be installed using the credentials obtained in the above steps
 
 **Chain ID**: `your_chain_key`
 
-Basic Terms
----------------
+
+<section class="userguide" markdown="1">
+
+## User Giode
+
+<div class="section-content" markdown="1">
+
 A list of some of the basic terms used within the ClubReady API.
 
 * **Chain/Corp** - A corporate entity that typically will have more than one Store/Club in ClubReady.
@@ -35,5 +51,6 @@ A list of some of the basic terms used within the ClubReady API.
 * **Staff Types** - a "role" that Staff members are assigned to through the administrative interface in ClubReady in which you can assign permissions.
 * **Prospect Type** - a way to categorize Leads in ClubReady. Based on a ProspectTypeId, a Lead can be pushed through automated work flows for marketing and sales actions/tasks.
 
+</div>
 
-
+</section>

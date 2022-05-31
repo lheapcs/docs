@@ -1,8 +1,12 @@
 
-Docusign Setup
----------------
+<section class="setup partner" markdown="1">
 
-For Cyclr to connect with the Docusign API you will need to create an "Application" in the Docusign account, as detailed below:
+## Partner Setup
+
+<div class="section-content" markdown="1">
+
+
+Create an Application in the Docusign account:
 
   > NB. This part is completed once, by a Partner.  The client/customer does not need their own separate application within Docusign.
 
@@ -19,8 +23,15 @@ For Cyclr to connect with the Docusign API you will need to create an "Applicati
 11. The intergration key will be needed in the steps below.
  
 
-Connector Setup
----------------
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 The Connector now can be installed using the credentials obtained in the above steps:
 
@@ -31,3 +42,8 @@ The Connector now can be installed using the credentials obtained in the above s
 **Scopes** (This is optional) Leave blank or you can reduce the scopes depending on the methods you require for interations. A space-separated list. Full list of scopes are [here](https://developers.docusign.com/platform/auth/reference/scopes/):  
 
 You will then be prompted to log in, select your Hubspot and authorize access to the connector.
+
+</div>
+
+</section>
+
