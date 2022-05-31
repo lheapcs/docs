@@ -11,4 +11,4 @@ showv1content: true
 ---
 {% assign connectordata = site.data.v2.connectors.connector-capsule %}
 {% assign v1content = "capsule.md" %}
-{% include v2/connector/connector.html %}	
+{% include v2/connector/connector.html %}
