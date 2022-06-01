@@ -1,16 +1,31 @@
 
-## FranConnect ##
+<section class="setup partner" markdown="1">
 
-This document will explain what is needed to setup access to FranConnect and install the connector.
+## Partner Setup
 
-### Authentication Details Setup ###
-Contact FranConnect to get a **Client ID** and **Client Secret**. Contact details can be found [here](https://docs.franconnect.net/#tag/Introduction).
+<div class="section-content" markdown="1">
 
-### Connector Setup ###
-In Cyclr's Connector Setup, enter the **Client ID** and **Client Secret** you were given into the appropriate fields.
+Contact [FranConnect](https://docs.franconnect.net/#tag/Introduction) to get a `Client ID` and `Client Secret`. 
 
-**Company Code** is the part after "https://" and before "/fc" of the login URL.
+</div>
 
-For example, if the login URL for your FranConnect system is `https://developers.franconnect.net/fc`, then the company code will be `developers.franconnect.net`.
+</section>
 
-Sign in the the FranConnect account using the details provided and the connector will then be authenticated.
+<section class="setup partner" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+In Cyclr's Connector Setup, enter the `Client ID` and `Client Secret`.
+
+The `Company Code` is the part after "https://" and before "/fc" of the login URL.
+
+For example, for a login URL for your FranConnect system is `https://developers.franconnect.net/fc`,  the company code is `developers.franconnect.net`.
+
+Login to the FranConnect account using the details provided and the connector is authenticated.
+
+</div>
+
+</section>
+

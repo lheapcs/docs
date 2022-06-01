@@ -1,11 +1,20 @@
 
-In your Facebook Account navigate to Business Settings > System Users:
+<section class="setup partner" markdown="1">
+
+## Partner Setup
+
+<div class="section-content" markdown="1">
+
+In your Facebook Account go to Business Settings > System Users:
 
 - Select relevant System User 
 - Generate New Token
 
-Copy and paste token into Setup > Access Token in Connector Setup - you should now be authenticated.
+Copy and paste token into Setup > Access Token in Connector Setup. You should now be authenticated.
 
-Further information can be found by visiting the Facebook Offline Conversions documentation:
+See the [Facebook Offline Conversions documentation](https://developers.facebook.com/docs/marketing-api/offline-conversions#requirements) for more information.
 
-[https://developers.facebook.com/docs/marketing-api/offline-conversions#requirements](https://developers.facebook.com/docs/marketing-api/offline-conversions#requirements)
+</div>
+
+</section>
+

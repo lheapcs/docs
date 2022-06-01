@@ -1,4 +1,9 @@
-## FullContact
+
+<section class="userguide" markdown="1">
+
+## User guide
+
+<div class="section-content" markdown="1">
 
 ### Integrate FullContact address books with your apps
 
@@ -56,3 +61,7 @@ In this example workflow, a Cycle is triggered when a Contact Form 7 form is sub
 You can then pass data values from the FullContact connector to your CRM, which is shown below being mapped in the Salesforce connector.
 
 ![Mapping data from FullContact connector](https://cyclr.com/wp-content/uploads/2017/11/FullContact-Enhance-mapping.gif)
+
+</div>
+
+</section>

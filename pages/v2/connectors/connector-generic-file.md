@@ -7,7 +7,7 @@ icon: https://my.cyclr.com/api/ConnectorIcon/17157
 default_header: false
 category: Utility Connectors
 categories: [Utility Connectors,Data Tools,Developer Tools]
-showv1content: false
+showv1content: true
 ---
 {% assign connectordata = site.data.v2.connectors.connector-generic-file %}
 {% assign v1content = "generic-file.md" %}
