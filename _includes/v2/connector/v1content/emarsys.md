@@ -1,8 +1,18 @@
 
-## Authentication ##
+<section class="setup partner" markdown="1">
 
-To authenticate the connector you will need a username and secret key.  To obtain these you will need to create an API user within Emarsys.
+## Partner Setup
 
-There are instructions for doing so here: https://dev.emarsys.com/v2/before-you-start/overview#creating-api-users
+<div class="section-content" markdown="1">
+
+Create an API user within Emarsys to obtain the username and secret key.
+
+See the [Emarsys API documentation](https://dev.emarsys.com/docs/emarsys-api/ZG9jOjI0ODk5NzAx-authentication#creating-api-users) for details.
 
 Once you have the username and secret, you can use them to authenticate the connector.
+
+</div>
+
+</section>
+
+

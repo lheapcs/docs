@@ -1,16 +1,34 @@
 
-## Drip Setup
+<section class="setup partner" markdown="1">
 
-In order to authenticate the connector, you will need your Client ID and Client Secret.  You get these by setting up an Application within Drip.
+## Partner Setup
 
-You will need to provide your Cyclr Partner 'Service Domain' as part of the process of setting up access so best to have that information to hand before starting. This is specific to your instance of Cyclr and it can be found from the Cyclr Partner Console under: Settings > General Settings > Service Domain.
+<div class="section-content" markdown="1">
+
+Create an Application in Drip to get your Client ID and Client Secret.  
+
+The Application requires  your Cyclr Partner `Service Domain`. 
+
+This is specific to your instance of Cyclr . Go to your Cyclr Partner Console, and got to Settings > General Settings > Service Domain to find your 
 
 ### Setting up oAuth Application
 - Go to https://www.getdrip.com/user/applications, choose a name for your application, and click "Create Application".
 - In Callback URL, put ``https://YourServiceDomain/connector/callback`` 
-- Copy the Client ID and Client Secret for use in setting up the connector.
+- Copy the `Client ID` and `Client Secret` for use in setting up the connector.
 - Click Save, and then Activate.
 
-### Installing the Connector
-- You will now be able to authenticate the connector.
-- Use the credentials from above steps.
+</div>
+
+</section>
+
+<section class="setup partner" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+You will now be able to authenticate the connector using the `Client ID` and `Client Secret`.
+
+</div>
+
+</section>

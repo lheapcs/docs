@@ -8,7 +8,7 @@
 # windows cli 
 # help : python getconnectorscontent.py --help
 # for single connector : python getconnectorscontent.py --connectorid 99999
-# for all connectors: python getconnectorscontent.py --connectorid 99999
+# for all connectors: python getconnectorscontent.py
 
 
 import argparse
