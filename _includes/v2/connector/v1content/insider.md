@@ -1,35 +1,53 @@
 
-## Connector Setup
+<section class="setup partner" markdown="1">
 
-To setup the connector you will need a **Partner Name** and **Request Token**, both of which should be provided by Insider.
+## Partner Setup
 
-1. Locate the Insider connector in the Cyclr console.
+<div class="section-content" markdown="1">
+
+
+To setup the connector you need:
+- **Partner Name** 
+- **Request Token**
+
+These are provided by Insider.
+
+1. Locate the Insider connector in the Cyclr console
 
    > Cyclr Console > Connectors > Connector Library > Insider
 
-2. Click the open padlock and on the next page enter the **Partner Name** and API Key (your Insider **Request Token**).
+2. Click the **open padlock**
+3. On the next page enter the **Partner Name** and `API Key`  - the **Request Token** from Insider
 
 The connector is now authenticated and ready to use.
 
+</div>
+
+</section>
+
+<section class="userguide" markdown="1">
+
 ## User Guide
+
+<div class="section-content" markdown="1">
 
 ### Unifier Field (Required)
 
-In order to send data to Insider, you must first define a Unifier Field:
+To send data to Insider, define a Unifier Field:
 
-1. Go to https://{AccountName}.inone.useinsider.com/crm-attributes
+1. Go to `https://{AccountName}.inone.useinsider.com/crm-attributes`
 
 2. Click **Create New CRM Attribute**
 
 3. Set the **Data Type**
 
-4. When setting the **Attribute Name** for the Unifier Field you have the choice of one of the default Unifier Field names (**email**, **phone_number**), or you can use a custom name of your choice
+4. Set the **Attribute Name** for the Unifier Field: this is either on of the default Unifier Field names (**email**, **phone_number**), or  a custom name of your choice
 
 5. Make sure this has been selected as the **Unifier**
 
 ![unifier field](./images/insider_unifier.png)
 
-This is what will be referenced by **Identifier Type** in the Cyclr methods which is a required field.
+The Cyclr methods refer to this as the **Identifier Type**, which is a required field.
 
 ### Sending Custom Data (Optional)
 
@@ -67,3 +85,7 @@ Now from the **Edit Connector** page within the Cyclr console:
    > Note: To integrate properly with the Insider API, the **Data Type** as set in this drop-down can only be **Text**, **Integer**, **Boolean** or **DateTime**.
 
 Your custom field is now initialized and ready to use.
+
+</div>
+
+</section>

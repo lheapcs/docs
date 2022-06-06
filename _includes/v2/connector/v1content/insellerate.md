@@ -1,7 +1,19 @@
 
-## Authentication
+<section class="setup partner" markdown="1">
 
-No authentication details are required to use the Insellerate connector, however you will need to contact Insellerate to confirm that the IP address for your Cyclr Partner Console has been whitelisted.  The IP address that you need to use will depend on which Cyclr Server is hosting your console.  You can find the appropriate IP by following the link below.
+## Partner Setup
 
-[Cyclr IP Addresses](./cyclr-ip-whitelisting)
+<div class="section-content" markdown="1">
+
+No authentication details are required to use the Insellerate connector.
+
+However you need to contact Insellerate to confirm that the IP address for your Cyclr Partner Console has been whitelisted.  
+
+The IP address that you need to use depends on which Cyclr Server is hosting your console.  
+
+See [Cyclr IP Addresses](./cyclr-ip-whitelisting) to find the appropriate IP.
+
+</div>
+
+</section>
 

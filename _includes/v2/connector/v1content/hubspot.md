@@ -1,23 +1,29 @@
 
-### HubSpot Setup
+<section class="setup partner" markdown="1">
 
-For Cyclr to connect with the HubSpot API you will need to create an "App" within HubSpot, as detailed below:
+## Partner Setup
 
-  > Note: This part can be completed once, by a Cyclr Partner.  The client/customer does not need their own separate App within HubSpot.
+<div class="section-content" markdown="1">
+
+Create an App within HubSpot::
+
+**NB**: This part can be completed once, by a Cyclr Partner.  The client/customer does not need their own separate App within HubSpot.
 
 1. Login to the HubSpot Developer Portal [here](https://app.hubspot.com/signup-v2/developers)
 2. Follow the HubSpot [documentation](https://developers.hubspot.com/docs/faq/how-do-i-create-an-app-in-hubspot) to create an application
-3. In the `Auth` tab you will see a `Client ID` and `Client Secret`.  Make a note of these to use in Cyclr's Connector setup.
-4. The Redirect URL that creates the link between your Cyclr Console and HubSpot is shown on the page where the Client ID and Client Secret are entered.  It has the form
+3. In the `Auth` tab you will see a `Client ID` and `Client Secret`.  Note these to use in Cyclr's Connector setup.
+4. Note the `Redirect URL` that creates the link between your Cyclr Console and HubSpot: it is shown on the page where the `Client ID` and `Client Secret` are entered.  It has the form
 `https://[Your Cyclr Service Domain]/connector/callback`
-5. It's not necessary to set Scopes at this point - see next section for details on this.
+5. You do not need to set Scopes at this point : see next section for details on this
 
 ### Scopes
 
-As mentioned above - it's not necessary to set scopes at this point. The default scopes of `crm.objects.contacts.read` && `crm.objects.contacts.write` will be requested by the Cyclr Connector if you leave the input empty. 
-If you input your own scope-list, this will override the default values. 
+You do not need to set scopes at this point. The default scopes of `crm.objects.contacts.read` and `crm.objects.contacts.write` will be requested by the Cyclr Connector if you leave the input empty. 
+
+If you enter your own scope-list, this will override the default values. 
 
 #### IMPORTANT NOTE (November 2021)
+
 The way that HubSpot handles contact scopes has recently changed:
 
 [https://developers.hubspot.com/docs/api/oauth/contacts-scope-migration](https://developers.hubspot.com/docs/api/oauth/contacts-scope-migration)
@@ -29,29 +35,56 @@ If you have an _existing_ HubSpot app this is likely to have been auto-migrated 
 
 ### Permissions
 
-In order to use the Products and Line Items methods, the user must be assigned a [paid Sales Hub seat](https://knowledge.hubspot.com/articles/kcs_article/account/manage-sales-hub-and-service-hub-paid-users) within HubSpot.
+To use the Products and Line Items methods, the user must be assigned a [paid Sales Hub seat](https://knowledge.hubspot.com/articles/kcs_article/account/manage-sales-hub-and-service-hub-paid-users) within HubSpot.
 
-### Connector Setup
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 The Connector now can be installed using the credentials obtained in the above steps:
 
-**Client ID**: `Client ID`
+- **Client ID**: `Client ID`
+- **Secret**: `Client Secret`
+- **Scopes/Optional**: This defines what permissions will be requested on the consent screen presented to your users.  
 
-**Secret**: `Client Secret`
+By default, all users are asked to consent to the following permissions/scopes:
+- `crm.objects.contacts.read`
+- `crm.objects.deals.read`
+- `crm.objects.companies.read`
 
-**Scopes/Optional**: This defines what permissions will be requested on the consent screen presented to your users.  
+Where appropriate users are asked to consent to optional scopes:
+- ``content``
+- ``reports``
+- ``e-commerce``
+- ``forms``
 
-By default, all users will be asked to consent to the following permissions/scopes `crm.objects.contacts.read`,`crm.objects.deals.read` and `crm.objects.companies.read`, and where appropriate (these are optional scopes, in other words) users will be asked to consent to ``content`` ``reports`` ``e-commerce`` ``forms``.
+If you need to request *alternative* scopes/optional scopes, set them here.
 
-Should you need to request *alternative* scopes/optional scopes, this is where you would set them.
+You will be prompted to log in, select your HubSpot and authorize access to the connector.
 
-You will then be prompted to log in, select your HubSpot and authorize access to the connector.
+</div>
+
+</section>
+
+<section class="userguide" markdown="1">
+
+## User Guide
+
+<div class="section-content" markdown="1">
 
 ### Account Selection
 
-When authenticating the HubSpot Connector and signing into HubSpot, the user will be presented with the HubSpot **Choose an Account** screen.
+When authenticating the HubSpot Connector and signing into HubSpot, the user is presented with the HubSpot **Choose an Account** screen.
 
-During testing, you should select your main HubSpot account, rather than your developer account.  You can identify the main account by looking for the one with items shown under the "PRODUCTS" heading as shown below.
+During testing, you should select your main HubSpot account, rather than your developer account.  
+
+You can identify the main account by looking for the one with items shown under the **PRODUCTS** heading as shown below.
 
 In this example, that would be the "Cyclr" account:
 
@@ -63,14 +96,14 @@ Useful if accessing this Connector via the API.  Property Names given here are i
 
 | Property Name   | Description    |
 | ----------- | -----------    |
-| Scopes      | The scopes of the connector. Default value is `crm.objects.contacts.read`,`crm.objects.deals.read`,`crm.objects.companies.read`. |
-| OptionalScopes   | The optional scopes of the connector. Default value is "content reports e-commerce forms" |
+| Scopes      | The scopes of the connector: default values are  `crm.objects.contacts.read`,`crm.objects.deals.read`,`crm.objects.companies.read` |
+| OptionalScopes   | The optional scopes of the connector. Default value is **content reports e-commerce forms** |
 
 
 ### Webhook Setup
 Hubspot webhooks utilise a single webhook URL, this requires some configuration of your Hubspot application.
 
-Navigate to Cyclr Console > Connectors > Application Connector Library > Hubspot > Setup
+Go to Cyclr Console > Connectors > Application Connector Library > Hubspot > Setup
 
 Copy the Webhook URL to your clipboard. e.g. ```https://<yourserivcedomain>/api/partnerwebhook/xxxxxx``` (Note:do not user the webhook url from the builder, but this one under the partner console)
 
@@ -81,30 +114,38 @@ You will now need to setup the Hubspot application to send webhooks. This has th
 
 #### Entering the URL
 
-* Navigate to the Hubspot Developers App [Dashboard](https://app.hubspot.com/developer), and select the application you use with Cyclr.
-* Within this application, navigate to Webhooks.
-* Paste the Webhook URL from your clipboard, into the "target URL"
-* Click Save (bottom of screen)
+- Go to the Hubspot Developers App [Dashboard](https://app.hubspot.com/developer)
+- s=Select the application you use with Cyclr
+- Within this application, navigate to **Webhooks**
+- Paste the `Webhook URL` from your clipboard, into the **Target URL**
+- Click **Save** at the bottom of screen
 
 #### Scopes
-Seting up your subscriptions may require you to alter the scopes of the Hubspot application to allow the events to be sent. Ensure that your connector is authorised with the right scopes to recieve the webhook events.
+
+Seting up your subscriptions may require you to alter the scopes of the Hubspot application to allow the events to be sent. 
+
+Ensure that your connector is authorised with the right scopes to recieve the webhook events.
 
 #### Selecting events to subscribe to
 
-* Click Create Subscription
-* Select the objects and events that you wish to send to Cyclr
-* Click Subscribe
+- Click Create Subscription
+- Select the objects and events that you wish to send to Cyclr
+- Click Subscribe
 
 #### Activating the events
 
-* Under event subscriptions 
-* Hover over the line with mouse and view subscriptions button will be shown, click this button
-* Hover over the line with mouse and  activate" button will be shown, click this button to activate the sending of the webhook
+- Under event subscriptions 
+- Click the Hover **View subscriptions** button displayed on hover over the line
+- Click the "Activate" button will be shown displayed on hover over the line
 
 Your application is now set up for Webhooks using Cyclr.
 
 ### Adding Webhooks to your Cycle or Template
 
-* Drag the Webhook step from the sidebar into the Builder.
-* Connect the Webhook to another step.
-* Click Run to start the Cycle.
+- Drag the Webhook step from the sidebar into the Builder
+- Connect the Webhook to another step
+- Click Run to start the Cycle
+
+</div>
+
+</section>
