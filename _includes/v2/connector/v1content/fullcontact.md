@@ -1,7 +1,7 @@
 
 <section class="userguide" markdown="1">
 
-## User guide
+## User Guide
 
 <div class="section-content" markdown="1">
 

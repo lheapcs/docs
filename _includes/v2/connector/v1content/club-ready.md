@@ -37,7 +37,7 @@ The Connector can be installed using the credentials obtained in the above steps
 
 <section class="userguide" markdown="1">
 
-## User Giode
+## User Guide
 
 <div class="section-content" markdown="1">
 

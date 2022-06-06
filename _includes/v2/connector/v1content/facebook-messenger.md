@@ -60,7 +60,7 @@ Your Facebook Messenger API connector is now set up!
 
 <section class="userguide" markdown="1">
 
-## User guide
+## User Guide
 
 <div class="section-content" markdown="1">
 

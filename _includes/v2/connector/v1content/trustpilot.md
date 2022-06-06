@@ -28,7 +28,7 @@ Follow the steps outlined in [this guide](https://support.trustpilot.com/hc/en-u
 
 The connector is now authenticated and ready to use.
 
-## User guide
+## User Guide
 
 You will need a 'Business Unit ID' for most requests, without it you will receive a '403 - Forbidden' response. The recommended way of obtaining that is by using the 'Search For Business Units' method as the first step in your cycles.
 

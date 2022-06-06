@@ -7,7 +7,7 @@ icon: https://my.cyclr.com/api/ConnectorIcon/783
 default_header: false
 category: Forms
 categories: [Forms]
-showv1content: false
+showv1content: true
 ---
 {% assign connectordata = site.data.v2.connectors.connector-gravity-forms-plugin %}
 {% assign v1content = "gravity-forms-plugin.md" %}

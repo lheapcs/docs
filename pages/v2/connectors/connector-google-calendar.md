@@ -7,7 +7,7 @@ icon: https://my.cyclr.com/api/ConnectorIcon/15522
 default_header: false
 category: Collaboration
 categories: [Collaboration,Calendars]
-showv1content: true
+showv1content: false
 ---
 {% assign connectordata = site.data.v2.connectors.connector-google-calendar %}
 {% assign v1content = "google-calendar.md" %}

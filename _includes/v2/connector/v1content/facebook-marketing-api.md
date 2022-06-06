@@ -59,7 +59,7 @@ Your Facebook Marketing API connector is now set up! You can test it by installi
 
 <section class="userguide" markdown="1">
 
-## User guide
+## User Guide
 
 <div class="section-content" markdown="1">
 
