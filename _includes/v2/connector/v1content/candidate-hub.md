@@ -1,3 +1,4 @@
+
 <section class="setup partner" markdown="1">
 
 ## Partner Setup
@@ -12,8 +13,8 @@ See the [Mautic API documentation](https://developer.mautic.org/#rest-api) for d
 
 Enable API access in your instance of Candidate Hub: 
 
-- Go to Settings -> Configuration
-- Select API Settings
+- Go to **Settings** > **Configuration**
+- Select **API Settings**
 - Select ``yes`` under **API enabled?**
 
 ### Adding a New Application

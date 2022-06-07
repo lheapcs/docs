@@ -1,13 +1,26 @@
 
-## Authentication
+<section class="setup partner" markdown="1">
 
-To get a **client ID** and **client secret** you must login to your Marketo installation as an admin.
+## Partner Setup
 
-1. Go to **Admin > LaunchPoint** under the **Integration** menu.
-2. Click on **View Details** under the service that you want to use. If no services are shown, create a new one.
-3. Copy the **client ID** and **client secret** from the prompt.
+<div class="section-content" markdown="1">
 
-### Cyclr Setup
+Login to your Marketo installation as an admin to get your `Client ID` and `Client Secret`.
+
+- Go to **Admin > LaunchPoint** under the **Integration** menu.
+- Click  **View Details** under the service that you want to use
+- If no services are shown, create a new one
+- Copy the `Client ID` and `Client Secret` from the prompt
+
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your Marketo App within Cyclr:
 
@@ -27,11 +40,21 @@ Enter the following values:
 
 Your Marketo Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
 
-## Bulk Import/Export
+</div>
+
+</section>
+
+<section class="userguide" markdown="1">
+
+## User Guide
+
+<div class="section-content" markdown="1">
+
+### Bulk Import/Export
 
 The ability to import and export CSV, TSV or SSV files is supported with methods from the **Bulk Imports** and **Bulk Exports** categories.
 
-### Import
+#### Import
 
 To import data as a CSV or TSV file you will first need to add custom fields for the column headers that are to be created to the method **Create Import Job**.
 
@@ -47,7 +70,7 @@ Your custom request fields should be created as:
 
 The request fields are now configured and ready to be mapped.
 
-### Export
+#### Export
 
 **Note:** The following example shows the process for an export of type **leads**. The process for activities is identical but with export type changed to **activities**.
 
@@ -55,19 +78,18 @@ The request fields are now configured and ready to be mapped.
 
 To create a bulk export from Marketo we must create 2 cycles:
 
-1. **Cycle 1** will be used to Create the export job, add that job to the processing queue and then send the Export ID to the Cycle 2
+- **Cycle 1** will be used to Create the export job, add that job to the processing queue and then send the Export ID to the Cycle 2
 
-2. **Cycle 2** will start when it's first step, a webhook, receives the Export ID from Cycle 1. Cycle 2 will then check the status of the export job. If the status is **completed** we will continue down the true branch to retrieve the file content. If the status is not **completed** we will continue down the false branch, wait for a specified amount of time and then call the starting webhook again, thus repeating the process of Cycle 2
+- **Cycle 2** will start when it's first step, a webhook, receives the Export ID from Cycle 1. Cycle 2 will then check the status of the export job. If the status is **completed** we will continue down the true branch to retrieve the file content. If the status is not **completed** we will continue down the false branch, wait for a specified amount of time and then call the starting webhook again, thus repeating the process of Cycle 2
 
 **Generic Webhook** and **Generic File** will both need to be installed from our Utility Connectors library.
 
 More information on these connectors can be found [here](https://docs.cyclr.com/generic-webhook) and [here](https://docs.cyclr.com/generic-file).
 
----
 
 Now lets look at the export process in more detail.
 
-**Cycle 1**:
+##### Cycle 1
 
 ![create export job configuration](./images/marketo_export_11.png)
 
@@ -115,7 +137,7 @@ Now lets look at the export process in more detail.
 
 12. As you can also see, a URL is required. The URL we are posting the Export ID to will be that of the webhook in Cycle 2
 
-**Cycle 2**:
+##### Cycle 2
 
 ![create export job configuration](./images/marketo_export_12.png)
 
@@ -154,3 +176,7 @@ Now that both cycles are configured we can run them:
 1. Run **Cycle 2** first. As you will see, nothing will happen at this point. The cycle is essentially on standby, ready to run when the webhook is triggered
 
 2. Run **Cycle 1**. This will create an export job, add it to the processing queue and send the Export ID to the webhook of **Cycle 2**, thus starting that cycle
+
+</div>
+
+</section>

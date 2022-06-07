@@ -7,10 +7,10 @@
 
 ### API Key Setup ###
 
-1. Login to DevicePilot 
-2. Go to the token settings
-3. Create a new token - Select *POST* as the token type and enter an appropriate name
-2. Click *Show token* to view the token and note the value. It should start with *TOKEN*
+- Login to DevicePilot 
+- Go to the token settings
+- Create a new token - Select *POST* as the token type and enter an appropriate name
+- Click *Show token* to view the token and note the value. It should start with *TOKEN*
 
 </div>
 

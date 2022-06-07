@@ -1,22 +1,34 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
 
-First, login to your existing Marketron Traffic account or [sign up for one.](https://www.marketron.com/logins/)
+<div class="section-content" markdown="1">
 
-#### Retrieving Auth Details
+Login to your existing Marketron Traffic account or [sign up for one.](https://www.marketron.com/logins/)
 
-*   Contact Marketron [here](support@marketron.com) to request access to the API and your API Key.
-    *   They will send you an email that contains your API Key, keep this safe.
+### API Key
 
-### Cyclr Setup
+- Contact [Marketron](support@marketron.com) to request access to the API and your API Key.
+- Marketron will send you an email that contains your API Key, keep this safe.
+
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your Marketron app within Cyclr:
 
-*   Go to your **Cyclr Console**
-*   Click the **Connectors** menu along the top
-*   Choose Connector Library
-*   Scroll down to **Marketron**
-*   Click the **Setup** button
+- Go to your **Cyclr Console**
+- Click the **Connectors** menu along the top
+- Choose Connector Library
+- Scroll down to **Marketron**
+- Click the **Setup** button
 
 Enter the following values:
 
@@ -28,3 +40,7 @@ Enter the following values:
 
 
 Your Marketron Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>

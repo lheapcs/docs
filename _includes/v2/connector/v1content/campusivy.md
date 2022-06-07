@@ -5,12 +5,12 @@
 
 <div class="section-content" markdown="1">
 
-Login to your [CampusIvy account.](http://www.campusivy.com/client-login/)
+Login to your [CampusIvy account](http://www.campusivy.com/client-login/).
 
 ### OAuth2 Details
 
-*   Set up your application.
-*   Note the **Institution ID** and **Client secret**.
+- Set up your application.
+- Note the **Institution ID** and **Client secret**.
 
 </div>
 
@@ -24,11 +24,11 @@ Login to your [CampusIvy account.](http://www.campusivy.com/client-login/)
 
 Setup your CampusIvy App within Cyclr:
 
-*   Go to your **Cyclr Console**
-*   Click the **Connectors** menu along the top
-*   Choose Connector Library
-*   Scroll down to **CampusIvy**
-*   Click the **Setup** button
+- Go to your **Cyclr Console**
+- Click the **Connectors** menu along the top
+- Choose Connector Library
+- Scroll down to **CampusIvy**
+- Click the **Setup** button
 
 Enter the following values:
 

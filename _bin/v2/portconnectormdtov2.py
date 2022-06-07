@@ -41,7 +41,7 @@ md_dict = {
 "facebook-marketing":"facebook-marketing-api",
 "FluentCommerce":"fluentcommerce",
 "Follow-Up-Boss":"follow-up-boss",
-"foodtec_docs":"foodtec",
+"foodtec_docs":"foodtec-solutions",
 "GoCardless":"gocardless",
 "GoDaddy":"godaddy",
 "googleleads":"google-ads",

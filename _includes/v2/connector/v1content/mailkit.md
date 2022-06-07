@@ -1,29 +1,43 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
 
-First, login to your existing Mailkit account or [sign up for one.](https://app.mailkit.eu/)
+<div class="section-content" markdown="1">
 
-### Retrieving Authentication Details
+Login to your existing Mailkit account or [sign up for one](https://app.mailkit.eu/).
 
-*   [Login](https://app.mailkit.eu/) to your Mailkit Account.
-*   Click Create App.
-*   Enavigate to your Profile page, under the menu, click on Integration then API Settings.
-*   You'll find a page that presents your User ID and MD5 Hash among other information.
-*   Note the **User ID** and **MD5 Hash**.
+### Authentication Details
 
-### Cyclr Setup
+- Click **Create App**
+- Go to your Profile page
+- Click **Integration** 
+- CLick **API Settings**
+- On the Settings page, note the `User ID` and `MD5 Hash`
+</div>
 
-You have the choice of authenticating the connector at either Partner level or Account level. Authenticating the connector at Partner level will result in all account installations of the connector sharing the same credentials. If you require each account installation to use separate credentials you should authenticate the connector at Account level.
+</section>
 
-Setup your Mailkit App within Cyclr:
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+
+Authenticate the connector at either Partner level or Account level. 
 
 ### Partner Level
 
-*   Go to your **Cyclr Console**
-*   Click the **Connectors** menu along the top
-*   Choose Application Connector Library
-*   Search for **Mailkit**
-*   Click the **padlock** button
+At Partner level all account installations of the connector share the same credentials.
+
+Setup your Mailkit App within Cyclr:
+
+- Go to your **Cyclr Console**
+- Click the **Connectors** menu along the top
+- Choose Application Connector Library
+- Search for **Mailkit**
+- Click the **padlock** button
 
 Enter the following values:
 
@@ -35,11 +49,21 @@ Your Mailkit Connector is now setup at Partner level. You can test it by install
 
 ### Account Level
 
+To use separate credentials for each account installation, authenticate the connector at Account level.
+
 From within the account you wish to install the connector:
 
-*   Click **Connectors** (top navigation bar) and then **Install New Application**
-*   Search for **Mailkit** and click **Install**
-*   You will be presented with a name and empty description for the installation, change these if preferred and then click 'Next'
-*   Enter your **Client ID** and **Client MD5**, then click 'Next'
+- Click **Connectors** (top navigation bar)
+- Click **Install New Application**
+- Find **Mailkit** 
+- Click **Install**
+- The installation name and description are shown, enter appropriate text
+- Click **Next**
+- Enter your `Client ID` and `Client MD5`
+- Click **Next**
 
 Your Mailkit connector is now setup at Account level. You can test it by executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>
