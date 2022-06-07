@@ -1,36 +1,67 @@
 
-## Connector Setup
+<section class="setup partner" markdown="1">
 
-### Obtaining Authentication Credentials
+## Partner Setup
 
-The Less Annoying CRM connector is authenticated with a User Code and an API Key. A guide to obtain these values is detailed [here](https://www.lessannoyingcrm.com/help/topic/api_getting_started/Generating_API_Token).
+<div class="section-content" markdown="1">
 
-To summarize:
+Less Annoying CRM authentication requires:
+- User Code
+- API Key
 
-1. If you have an account with Less Annoying CRM, [log in](https://www.lessannoyingcrm.com/login/). If not, [sign up](https://www.lessannoyingcrm.com/Signup) for an account
+See the [API guide](https://www.lessannoyingcrm.com/help/topic/api_getting_started/Generating_API_Token) for more information.
 
-2. At the top of [this](https://www.lessannoyingcrm.com/app/settings/api) page you should find your User Code and API Token. If these do not yet exist click "Generate a new API Token"
 
-### Authenticate The Connector
+1. [Log in](https://www.lessannoyingcrm.com/login/) to an existing account or [sign up](https://www.lessannoyingcrm.com/Signup)
+2. Go to the [API Settings](https://www.lessannoyingcrm.com/app/settings/api) page
+3. Note your `User Code` and `API Token` shown at the top of the page
+4. Click **Generate a new API Token** if  `User Code` and `API Token` are not shown
 
-1. Locate the Less Annoying CRM connector
+</div>
 
-   > Cyclr Console > Connectors > Connector Library > Less Annoying CRM
+</section>
 
-2. From the Edit Connector interface click 'Setup'
+<section class="setup cyclr" markdown="1">
 
-3. Enter your User Code and click 'Next'
+## Cyclr Setup
 
-4. In the API Key field enter your API Token and click 'Next'.
+<div class="section-content" markdown="1">
+
+1. Find the Less Annoying CRM connector
+
+   > **Cyclr Console** > **Connectors** > **Connector Library** > **Less Annoying CRM**
+
+2. From the Edit Connector interface click **Setup**
+
+3. Enter your `User Code` and click **Next**
+
+4. In the `API Key` field enter your `API Token` and click **'Next**
 
 The connector is now authenticated and ready to use.
 
-### User Guide
+</div>
 
-Within the three Pipeline methods (List, List New and List Updated) you have access to our lookup feature for each of the request fields.
+</section>
+
+<section class="userguide" markdown="1">
+
+## User Guide
+
+<div class="section-content" markdown="1">
+
+These Pipeline methods provice access to our lookup feature for each of the request fields:
+- List
+- List New
+- List Updated
 
 ![lookup feature](./images/less_annoying_crm_1.png)
 
 ![lookup feature](./images/less_annoying_crm_2.png)
 
-Pipeline ID is the only required field but the request can optionally be filtered by Status and User ID.
+Pipeline ID is the only required field.  
+
+The request can optionally be filtered by Status and User ID.
+
+</div>
+
+</section>

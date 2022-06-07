@@ -1,22 +1,28 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
 
-#### Login / Sign Up
+<div class="section-content" markdown="1">
 
-Login to JobNimbus or [sign up for an account here.](https://www.jobnimbus.com/trial-signup/)
+[Login](https://app.jobnimbus.com/login.aspx) to JobNimbus or [sign up for an account](https://www.jobnimbus.com/trial-signup/)
 
-#### Retrieving API Key Details
 
-First, go to Settings -> API -> New API key.
+- Go to **Settings** > **API** > **New API key**
+- Enter new API Key name 
+- select the access rights from the drop down menu
+	_For full access, use Admin._
+- Note your new API Key
 
-Set the name of a new API key within the empty text box.
+</div>
 
-Then, from the drop down menu, select the access rights of this API Key.
-_For full access, use Admin._
+</section>
 
-Finally, copy your new API Key from the table.
+<section class="setup cyclr" markdown="1">
 
-### Cyclr Setup
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your JobNimbus within Cyclr:
 
@@ -28,6 +34,10 @@ Setup your JobNimbus within Cyclr:
 
 Enter the following values:
 
-**API Key**: The key we just generated from the **Retrieving API Key Details** section of this guide.
+**API Key**: The key noted during the Partner Setup section of this guide.
 
 Your JobNimbus Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>

@@ -7,7 +7,7 @@ icon: https://my.cyclr.com/api/ConnectorIcon/5998
 default_header: false
 category: Marketing
 categories: [Marketing,Email Marketing,SMS]
-showv1content: true
+showv1content: false
 ---
 {% assign connectordata = site.data.v2.connectors.connector-listrak %}
 {% assign v1content = "listrak.md" %}

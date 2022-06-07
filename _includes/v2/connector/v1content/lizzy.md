@@ -1,22 +1,38 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
 
-First, login to your existing Lizzy account.
+<div class="section-content" markdown="1">
 
-#### API Key
+Login to your existing Lizzy account.
 
-Before you can use the Lizzy API, you must be granted access by the customer you're wishing to do business with. 
+### API Key
 
-To learn more about this option the Lizzy customer should watch video in Interface Setup Procedures (1.9) [Controlling Who Has Access To Your Data](https://youtu.be/zJbWNx4_rI4)
+To use the Lizzy API, the customer must grant you access. 
 
-With this you can see how to set up a contact to access to access the API.
+Refer your Lizzy customers to the video Interface Setup Procedures (1.9) [Controlling Who Has Access To Your Data](https://youtu.be/zJbWNx4_rI4)
 
-NOTE: If you are making calls on behalf of more than one Lizzy customer then you will receive a different API Key for each dealership or company. Lizzy uses them to determine which company you are working with.
+This video shows how to set up a contact to access the API.
 
-API Keys are IP restricted you will need to ensure you [whitelist Cyclr's IP address].
+**NB**: To make calls on behalf of more than one Lizzy customer, you need a different `API Key` for each dealership or company. Lizzy uses them to determine which company you are working with.
 
-### Cyclr Setup
+API Keys are IP restricted: you must [whitelist Cyclr's IP address](https://docs.cyclr.com/cyclr-ip-allowlist).
+
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup Lizzy within Cyclr:
 
-When installing the connector enter the API key obtained in above steps.
+When installing the connector enter the `API Key` obtained in from the Lizzy setup.
+
+</div>
+
+</section>
