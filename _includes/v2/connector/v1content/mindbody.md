@@ -1,6 +1,9 @@
 
-Mindbody Setup
----------------
+<section class="setup partner" markdown="1">
+
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 To setup the connector you need to access the configuration information within Mindbody. To do this a Mindbody [developer account](https://developers.mindbodyonline.com/Home/LogIn) will be needed.
 
@@ -21,8 +24,15 @@ The API key can be found by going to Account > API Credentials. You can either c
 
 You can also find the Site ID by following [this](https://support.mindbodyonline.com/s/article/206398178-How-do-I-find-my-Client-ID?language=en_US) guide.
 
-Connector Setup
----------------
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 The Connector now can be installed using the credentials obtained in the above steps:
 
@@ -34,3 +44,6 @@ The Connector now can be installed using the credentials obtained in the above s
 
 **Password**: `password`
 
+</div>
+
+</section>

@@ -11,6 +11,9 @@
 # for all connectors: python getconnectorscontent.py
 
 
+# https://pypi.org/project/python-slugify/
+# add slugify replacements for ampersand?
+
 import argparse
 import requests
 import re

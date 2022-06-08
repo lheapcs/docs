@@ -1,5 +1,9 @@
 
-## Authentication
+<section class="setup partner" markdown="1">
+
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 To authenticate the monday<span></span>.com connector you will need a Board ID and an API Key.
 
@@ -37,7 +41,15 @@ To authenticate the monday<span></span>.com connector you will need a Board ID a
 
    ![monday dot com board id](./images/monday_docs_1.png)
 
-### Connector Setup
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 1. Locate the monday<span></span>.com connector
 
@@ -50,3 +62,7 @@ To authenticate the monday<span></span>.com connector you will need a Board ID a
 4. Enter your API Key, click 'Next'
 
 The connector is now authenticated and ready to use.
+
+</div>
+
+</section>

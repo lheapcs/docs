@@ -1,41 +1,31 @@
 {
     "Description": "Powerful business management software",
-    "Id": 15750,
+    "Id": 17339,
     "Name": "MINDBODY",
     "Version": "v6",
     "Status": "Approved",
-    "Icon": "https://my.cyclr.com/api/ConnectorIcon/15750",
+    "Icon": "https://my.cyclr.com/api/ConnectorIcon/17339",
     "Categories": [
         "CRMs",
         "Healthcare/Wellness"
     ],
     "MethodCategories": [
         {
-            "Category": "Site",
+            "Category": "Appointments",
             "Methods": [
                 {
-                    "Name": "List Programs",
-                    "Description": "Get list programs.",
+                    "Name": "List Active Session Times",
+                    "Description": "Returns a list of the times that can be booked for a given program schedule type. ActiveSessionTimes represent the scheduling increments that can be booked during the active business hours for services",
                     "MethodType": "Action"
                 },
                 {
-                    "Name": "List Session Types",
-                    "Description": "Get list of session types.",
+                    "Name": "List Appointment Options",
+                    "Description": "List the appointment options.",
                     "MethodType": "Action"
                 },
                 {
-                    "Name": "List Sites",
-                    "Description": "Get list of sites..",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Resources",
-                    "Description": "Get list of resources.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Locations",
-                    "Description": "Get list locations.",
+                    "Name": "List Staff Appointments",
+                    "Description": "Returns a list of appointments by staff member.",
                     "MethodType": "Action"
                 }
             ]
@@ -44,6 +34,11 @@
             "Category": "Clients",
             "Methods": [
                 {
+                    "Name": "Search Clients",
+                    "Description": "Gets collection the clients matching there search text.",
+                    "MethodType": "Action"
+                },
+                {
                     "Name": "List New Clients",
                     "Description": "List all clients added since last run.",
                     "MethodType": "Action"
@@ -51,11 +46,6 @@
                 {
                     "Name": "List Updated Clients",
                     "Description": "Gets collection containing all of the clients updated since last run.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Search Clients",
-                    "Description": "Gets collection the clients matching there search text.",
                     "MethodType": "Action"
                 },
                 {
@@ -73,6 +63,11 @@
         {
             "Category": "Enrollments",
             "Methods": [
+                {
+                    "Name": "List Updated Enrollments",
+                    "Description": "Gets collection containing all of the updated enrollments since last run.",
+                    "MethodType": "Action"
+                },
                 {
                     "Name": "List Enrollments",
                     "Description": "Gets collection containing all of the clients",
@@ -111,26 +106,6 @@
             ]
         },
         {
-            "Category": "Appointments",
-            "Methods": [
-                {
-                    "Name": "List Active Session Times",
-                    "Description": "Returns a list of the times that can be booked for a given program schedule type. ActiveSessionTimes represent the scheduling increments that can be booked during the active business hours for services",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Staff Appointments",
-                    "Description": "Returns a list of appointments by staff member.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Appointment Options",
-                    "Description": "List the appointment options.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
             "Category": "Activation",
             "Methods": [
                 {
@@ -145,10 +120,45 @@
             ]
         },
         {
+            "Category": "Site",
+            "Methods": [
+                {
+                    "Name": "List New Resources",
+                    "Description": "Get list of all new resources since last run.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Programs",
+                    "Description": "Get list programs.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Session Types",
+                    "Description": "Get list of session types.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Sites",
+                    "Description": "Get list of sites..",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Resources",
+                    "Description": "Get list of resources.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Locations",
+                    "Description": "Get list locations.",
+                    "MethodType": "Action"
+                }
+            ]
+        },
+        {
             "Category": "Memberships",
             "Methods": [
                 {
-                    "Name": "Get All Active Client Memberships",
+                    "Name": "List Active Client Memberships",
                     "Description": "Gets all active client memberships.",
                     "MethodType": "Action"
                 }
@@ -173,6 +183,11 @@
                     "MethodType": "Action"
                 },
                 {
+                    "Name": "List Custom Client Fields",
+                    "Description": "Gets collection containing custom fields.",
+                    "MethodType": "Action"
+                },
+                {
                     "Name": "List Required Client Fields",
                     "Description": "Gets collection containing all of the clients required fields.",
                     "MethodType": "Action"
@@ -181,10 +196,70 @@
                     "Name": "List Client Services",
                     "Description": "Gets the purchased services for a specific client.",
                     "MethodType": "Action"
+                }
+            ]
+        },
+        {
+            "Category": "Client",
+            "Methods": [
+                {
+                    "Name": "List Client Indexes",
+                    "Description": "Client indexes are used to analyze client demographics. A business owner can set up different categories with sets of values which they can assign to each client. Client indexes are used in client searches, for tagging clients so that the owner can send mass emails to similar groups, and for many reports.",
+                    "MethodType": "Action"
                 },
                 {
-                    "Name": "List Custom Client Fields",
-                    "Description": "Gets collection containing custom fields.",
+                    "Name": "List Client Contract",
+                    "Description": "Gets collection containing all of the clients contracts.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Client Account Balances",
+                    "Description": "Gets client account balances.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Client Purchases",
+                    "Description": "Gets a list of purchases made by a specific client.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Contact Logs",
+                    "Description": "Gets not just all contact logs, but also system-generated contact logs, contact logs assigned to specific staff members, and contact logs of specific types or subtypes.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Updated Client Account Balances",
+                    "Description": "Gets updated client account balances since the last run.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Cross Regional Client Associations",
+                    "Description": "Returns a list of sites that a particular client ID (also referred to as an RSSID) or a client email address is associated with in a cross-regional organization. Either the ClientID or Email parameter is required. If both are provided, the ClientID is used.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Get Client By Client ID",
+                    "Description": "Get a client using their unique ID.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Client Visits",
+                    "Description": "Gets collection containing the clients visits.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Updated Contact Logs",
+                    "Description": "Gets not just all contact logs, but also system-generated contact logs, contact logs assigned to specific staff members, and contact logs of specific types or subtypes since the last run.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New Client Purchases",
+                    "Description": "Gets a list of new purchases made by a specific client since last run.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Updated Client Visits",
+                    "Description": "Gets collection containing the updated  clients visits since the last run.",
                     "MethodType": "Action"
                 }
             ]
@@ -211,50 +286,10 @@
                     "Name": "List Classes",
                     "Description": "Gets list of classes.",
                     "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "Client",
-            "Methods": [
-                {
-                    "Name": "List Client Contract",
-                    "Description": "Gets collection containing all of the clients contracts.",
-                    "MethodType": "Action"
                 },
                 {
-                    "Name": "List Client Account Balances",
-                    "Description": "Gets client account balances.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Client Purchases",
-                    "Description": "Gets a list of purchases made by a specific client.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Get Contact Logs",
-                    "Description": "Gets not just all contact logs, but also system-generated contact logs, contact logs assigned to specific staff members, and contact logs of specific types or subtypes.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Cross Regional Client Associations",
-                    "Description": "Returns a list of sites that a particular client ID (also referred to as an RSSID) or a client email address is associated with in a cross-regional organization. Either the ClientID or Email parameter is required. If both are provided, the ClientID is used.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Get Client By Client ID",
-                    "Description": "Get a client using their unique ID.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Client Visits",
-                    "Description": "Gets collection containing the clients visits.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Client Indexes",
-                    "Description": "Client indexes are used to analyze client demographics. A business owner can set up different categories with sets of values which they can assign to each client. Client indexes are used in client searches, for tagging clients so that the owner can send mass emails to similar groups, and for many reports.",
+                    "Name": "List Updated/New Classes Schedules",
+                    "Description": "Gets all enrollments that occur since last run.",
                     "MethodType": "Action"
                 }
             ]

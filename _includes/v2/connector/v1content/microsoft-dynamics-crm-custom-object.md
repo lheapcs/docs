@@ -1,5 +1,9 @@
 
-# Dynamics CRM Custom Objects Connector Setup
+<section class="setup partner" markdown="1">
+
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 This connector is designed to work with a single custom entity. When working with more than one, you must install a separate Dynamics CRM connector for each custom entity type.
 
@@ -30,3 +34,7 @@ Example:
 ![](../images/dynamics_custom_objects_updated_2.png)
 
 You can edit the **Display Name** and **Description** as appropriate, but **do not** edit the **Field Location** or **Data Type** values; doing so could cause mapping issues.
+
+</div>
+
+</section>

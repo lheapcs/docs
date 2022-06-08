@@ -1,25 +1,70 @@
 {
     "Description": "Microsoft Dynamics CRM is a customer relationship management software package.",
-    "Id": 17306,
-    "Name": "Microsoft Dynamics CRM",
+    "Id": 17022,
+    "Name": "Microsoft Dynamics CRM (OAuth2.0 Authorization Code)",
     "Version": "v8.1",
     "Status": "Approved",
-    "Icon": "https://my.cyclr.com/api/ConnectorIcon/17306",
+    "Icon": "https://my.cyclr.com/api/ConnectorIcon/17022",
     "Categories": [
         "CRMs"
     ],
     "MethodCategories": [
         {
-            "Category": "Contacts",
+            "Category": "Accounts",
             "Methods": [
                 {
-                    "Name": "Get Contact(s) By Email Address",
-                    "Description": "Gets all matching contacts from Dynamics by email address.",
+                    "Name": "Create Account",
+                    "Description": "Create an account.",
                     "MethodType": "Action"
                 },
                 {
-                    "Name": "List New Contacts",
-                    "Description": "Gets the new contacts added to Dynamics since the last time the process was run in this Cycle.",
+                    "Name": "List Accounts",
+                    "Description": "Gets a list of all accounts in Dynamics.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Get Account",
+                    "Description": "Get an account specified by its ID.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Updated Accounts",
+                    "Description": "Gets the updated accounts added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Delete Account",
+                    "Description": "Deletes an account.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Update Account",
+                    "Description": "Update an existing account.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New and Updated Accounts",
+                    "Description": "Gets the new and updated accounts added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New Accounts",
+                    "Description": "Gets the new accounts added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Get Account(s) By Email Address",
+                    "Description": "Gets a list of all accounts in Dynamics that match the email provided.",
+                    "MethodType": "Action"
+                }
+            ]
+        },
+        {
+            "Category": "Contacts",
+            "Methods": [
+                {
+                    "Name": "Create Contact",
+                    "Description": "Creates a new contact.",
                     "MethodType": "Action"
                 },
                 {
@@ -28,23 +73,13 @@
                     "MethodType": "Action"
                 },
                 {
-                    "Name": "Create Contact",
-                    "Description": "Creates a new contact.",
+                    "Name": "List New Contacts",
+                    "Description": "Gets the new contacts added to Dynamics since the last time the process was run in this Cycle.",
                     "MethodType": "Action"
                 },
                 {
-                    "Name": "Associate Tag with Contact (BETA)",
-                    "Description": "Associates a tag with a contact record.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Updated Contacts",
-                    "Description": "Gets updated contacts in Dynamics since the last time the process was run in this Cycle.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Update Contact",
-                    "Description": "Updates a contact.",
+                    "Name": "Get Contact(s) By Email Address",
+                    "Description": "Gets all matching contacts from Dynamics by email address.",
                     "MethodType": "Action"
                 },
                 {
@@ -53,23 +88,143 @@
                     "MethodType": "Action"
                 },
                 {
+                    "Name": "List New and Updated Contacts",
+                    "Description": "Gets the new and updated contacts added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                },
+                {
                     "Name": "List Contacts",
                     "Description": "Gets a list of all contacts in Dynamics.",
                     "MethodType": "Action"
                 },
                 {
-                    "Name": "List New and Updated Contacts",
-                    "Description": "Gets the new and updated contacts added to Dynamics since the last time the process was run in this Cycle.",
+                    "Name": "Update Contact",
+                    "Description": "Updates a contact.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Updated Contacts",
+                    "Description": "Gets updated contacts in Dynamics since the last time the process was run in this Cycle.",
                     "MethodType": "Action"
                 }
             ]
         },
         {
-            "Category": "Activities",
+            "Category": "Campaign Responses",
             "Methods": [
                 {
-                    "Name": "Create Email Activity",
-                    "Description": "Create an activity of the 'email' type",
+                    "Name": "List New and Updated Campaign Responses",
+                    "Description": "Lists new and updated campaign responses added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Campaign Responses",
+                    "Description": "List campaign responses.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Get Campaign Response",
+                    "Description": "Get a campaign response.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Link Contact to Campaign Response",
+                    "Description": "Link a contact to a campaign response.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New Campaign Responses",
+                    "Description": "Lists new campaign responses added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Delete Campaign Response",
+                    "Description": "Delete a campaign response.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Update Campaign Response",
+                    "Description": "Update a campaign response that is bound to a campaign.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Create Campaign Response",
+                    "Description": "Create a campaign response that is bound to a campaign.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Updated Campaign Responses",
+                    "Description": "Lists updated campaign responses added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                }
+            ]
+        },
+        {
+            "Category": "System Users",
+            "Methods": [
+                {
+                    "Name": "List System Users",
+                    "Description": "Gets a list of all system users in Dynamics.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Get System User",
+                    "Description": "Gets a system user from Dynamics by ID.",
+                    "MethodType": "Action"
+                }
+            ]
+        },
+        {
+            "Category": "Products",
+            "Methods": [
+                {
+                    "Name": "List Products",
+                    "Description": "Gets a list of all products in Dynamics.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Get Product",
+                    "Description": "Gets a Product from Dynamics by ID.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Updated Products",
+                    "Description": "Gets a list of all products in Dynamics updated since the last run time.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New Products",
+                    "Description": "Gets a list of all products in Dynamics added since the last run time.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New And Updated Products",
+                    "Description": "Gets a list of all products in Dynamics added or updated since the last run time.",
+                    "MethodType": "Action"
+                }
+            ]
+        },
+        {
+            "Category": "Roles",
+            "Methods": [
+                {
+                    "Name": "List Roles",
+                    "Description": "Gets a list of all roles.",
+                    "MethodType": "Action"
+                }
+            ]
+        },
+        {
+            "Category": "Fields",
+            "Methods": [
+                {
+                    "Name": "Get Entity Fields",
+                    "Description": "Get a single entity (e.g. contact)'s fields. Can be used to map additional data that is not currently mapped in a method.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Get Entity Fields (List Objects)",
+                    "Description": "Get fields of a List object (for example contacts - as opposed to contact).",
                     "MethodType": "Action"
                 }
             ]
@@ -110,16 +265,101 @@
             ]
         },
         {
-            "Category": "Fields",
+            "Category": "Leads",
             "Methods": [
                 {
-                    "Name": "Get Entity Fields",
-                    "Description": "Get a single entity (e.g. contact)'s fields. Can be used to map additional data that is not currently mapped in a method.",
+                    "Name": "List Updated Leads",
+                    "Description": "Get updated leads.",
                     "MethodType": "Action"
                 },
                 {
-                    "Name": "Get Entity Fields (List Objects)",
-                    "Description": "Get fields of a List object (for example contacts - as opposed to contact).",
+                    "Name": "Create Lead",
+                    "Description": "Create a new lead.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Leads By Email Address",
+                    "Description": "Gets all matching leads from Dynamics by email address.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Get Lead",
+                    "Description": "Gets a lead from Dynamics by ID.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New and Updated Leads",
+                    "Description": "Lists new and updated leads added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New Leads",
+                    "Description": "Get new leads.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Update Lead",
+                    "Description": "Update a lead.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Leads",
+                    "Description": "Get leads.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Delete Lead",
+                    "Description": "Deletes a lead.",
+                    "MethodType": "Action"
+                }
+            ]
+        },
+        {
+            "Category": "Campaigns",
+            "Methods": [
+                {
+                    "Name": "Update Campaign",
+                    "Description": "Update an existing campaign.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Updated Campaigns",
+                    "Description": "Lists updated Campaigns added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New Campaigns",
+                    "Description": "Lists the new Campaigns added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Get Campaign",
+                    "Description": "Gets a campaign from Dynamics by ID.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Campaigns",
+                    "Description": "Gets all campaigns in Dynamics.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Get Campaign By Name",
+                    "Description": "Gets a campaign by name. Leaves through the True Exit if found, else through the False Exit. If multiple matches are found, only the first is returned.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New and Updated Campaigns ",
+                    "Description": "Gets the new and updated campaigns added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Create Campaign",
+                    "Description": "Create a campaign.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Delete Campaign",
+                    "Description": "Delete a campaign.",
                     "MethodType": "Action"
                 }
             ]
@@ -135,8 +375,68 @@
             ]
         },
         {
+            "Category": "Tasks",
+            "Methods": [
+                {
+                    "Name": "Create Task",
+                    "Description": "Creates a new task for the specified contact.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List New Tasks",
+                    "Description": "Lists new Tasks added to Dynamics since the last time the process was run in this Cycle.",
+                    "MethodType": "Action"
+                }
+            ]
+        },
+        {
+            "Category": "Static Marketing Lists",
+            "Methods": [
+                {
+                    "Name": "List Static List's Leads",
+                    "Description": "Get static lead list contacts.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Remove Member(s) from Static List",
+                    "Description": "Removes Members from a Static Marketing List.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Static Lead Lists",
+                    "Description": "Get static marketing lists.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Static List's Contacts",
+                    "Description": "Get static list contacts.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Static Lists",
+                    "Description": "Get static marketing lists.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "Add Member(s) to Static List",
+                    "Description": "Adds Members to a Static Marketing List.",
+                    "MethodType": "Action"
+                },
+                {
+                    "Name": "List Static List's Accounts",
+                    "Description": "Get static list's accounts.",
+                    "MethodType": "Action"
+                }
+            ]
+        },
+        {
             "Category": "Dynamic Marketing Lists",
             "Methods": [
+                {
+                    "Name": "List Dynamic List's Accounts",
+                    "Description": "Get Accounts of a dynamic marketing lead list.",
+                    "MethodType": "Action"
+                },
                 {
                     "Name": "List Updated Dynamic Lists",
                     "Description": "Gets the updated dynamic marketing lists since last run.",
@@ -165,341 +465,6 @@
                 {
                     "Name": "List New Dynamic Lists",
                     "Description": "Gets the new dynamic marketing lists since last run.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Dynamic List's Accounts",
-                    "Description": "Get Accounts of a dynamic marketing lead list.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "System Users",
-            "Methods": [
-                {
-                    "Name": "Get System User",
-                    "Description": "Gets a system user from Dynamics by ID.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List System Users",
-                    "Description": "Gets a list of all system users in Dynamics.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "Opportunities",
-            "Methods": [
-                {
-                    "Name": "List Opportunities By Email",
-                    "Description": "Gets all opportunities that match the specified email address.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List New And Updated Opportunities",
-                    "Description": "Gets a list opportunities created or updated since the last run.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Get Opportunity",
-                    "Description": "Gets the opportunity specified by ID.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Update Opportunity",
-                    "Description": "Updates the opportunity specified by ID.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List New Opportunities",
-                    "Description": "Gets a list opportunities created since the last run.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Updated Opportunities",
-                    "Description": "Gets a list opportunities updated since the last run.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Get Opportunity By Email (First Match)",
-                    "Description": "Gets the first matching opportunity for the specified email address.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Opportunities",
-                    "Description": "Gets a list of all opportunities in Dynamics.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "Campaigns",
-            "Methods": [
-                {
-                    "Name": "Update Campaign",
-                    "Description": "Update an existing campaign.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Get Campaign",
-                    "Description": "Gets a campaign from Dynamics by ID.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Campaigns",
-                    "Description": "Gets all campaigns in Dynamics.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Get Campaign By Name",
-                    "Description": "Gets a campaign by name. Leaves through the True Exit if found, else through the False Exit. If multiple matches are found, only the first is returned.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Create Campaign",
-                    "Description": "Create a campaign.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Delete Campaign",
-                    "Description": "Delete a campaign.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "Leads",
-            "Methods": [
-                {
-                    "Name": "List New Leads",
-                    "Description": "Get new leads.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Delete Lead",
-                    "Description": "Deletes a lead.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Updated Leads",
-                    "Description": "Get updated leads.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Leads",
-                    "Description": "Get leads.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Update Lead",
-                    "Description": "Update a lead.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Create Lead",
-                    "Description": "Create a new lead.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Leads By Email Address",
-                    "Description": "Gets all matching leads from Dynamics by email address.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Get Lead",
-                    "Description": "Gets a lead from Dynamics by ID.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "Campaign Responses",
-            "Methods": [
-                {
-                    "Name": "List Campaign Responses",
-                    "Description": "List campaign responses.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Get Campaign Response",
-                    "Description": "Get a campaign response.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Link Contact to Campaign Response",
-                    "Description": "Link a contact to a campaign response.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Delete Campaign Response",
-                    "Description": "Delete a campaign response.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Update Campaign Response",
-                    "Description": "Update a campaign response that is bound to a campaign.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Create Campaign Response",
-                    "Description": "Create a campaign response that is bound to a campaign.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "Static Marketing Lists",
-            "Methods": [
-                {
-                    "Name": "List Static Lists",
-                    "Description": "Get static marketing lists.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Add Member(s) to Static List",
-                    "Description": "Adds Members to a Static Marketing List.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Static List's Accounts",
-                    "Description": "Get static list's accounts.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Static List's Leads",
-                    "Description": "Get static lead list contacts.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Static List's Contacts",
-                    "Description": "Get static list contacts.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Static Lead Lists",
-                    "Description": "Get static marketing lists.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Remove Member(s) from Static List",
-                    "Description": "Removes Members from a Static Marketing List.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "Accounts",
-            "Methods": [
-                {
-                    "Name": "List Accounts By Email",
-                    "Description": "Gets all accounts that match the specified email address.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List New Accounts",
-                    "Description": "Gets the new accounts added to Dynamics since the last time the process was run in this Cycle.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Create Account",
-                    "Description": "Create an account.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Get Account By Email (First Match)",
-                    "Description": "Gets the first matching account for the specified email address.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Accounts",
-                    "Description": "Gets a list of all accounts in Dynamics.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Get Account",
-                    "Description": "Get an account specified by its ID.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Updated Accounts",
-                    "Description": "Gets the updated accounts added to Dynamics since the last time the process was run in this Cycle.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Delete Account",
-                    "Description": "Deletes an account.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "Update Account",
-                    "Description": "Update an existing account.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List New and Updated Accounts",
-                    "Description": "Gets the new and updated accounts added to Dynamics since the last time the process was run in this Cycle.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Accounts By Contact",
-                    "Description": "Gets all accounts that for which the specified Contact ID is the primary contact.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "Tasks",
-            "Methods": [
-                {
-                    "Name": "Create Task",
-                    "Description": "Creates a new task for the specified contact.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "Roles",
-            "Methods": [
-                {
-                    "Name": "List Roles",
-                    "Description": "Gets a list of all roles.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Roles",
-                    "Description": "Gets a list of all roles.",
-                    "MethodType": "Action"
-                }
-            ]
-        },
-        {
-            "Category": "Products",
-            "Methods": [
-                {
-                    "Name": "Get Product",
-                    "Description": "Gets a Product from Dynamics by ID.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Updated Products",
-                    "Description": "Gets a list of all products in Dynamics updated since the last run time.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List New And Updated Products",
-                    "Description": "Gets a list of all products in Dynamics added or updated since the last run time.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List Products",
-                    "Description": "Gets a list of all products in Dynamics.",
-                    "MethodType": "Action"
-                },
-                {
-                    "Name": "List New Products",
-                    "Description": "Gets a list of all products in Dynamics added since the last run time.",
                     "MethodType": "Action"
                 }
             ]

@@ -1,35 +1,60 @@
 
-## Setup
+<section class="setup partner" markdown="1">
 
-To authenticate the OpenApply connector you will need a Client ID, Client Secret and the name of you account.
+## Partner Setup
+
+<div class="section-content" markdown="1">
+
+To authenticate the OpenApply connector you need a :
+- Client ID
+- Client Secret
+- your account name
 
 ### Client ID & Client Secret
 
-To obtain your Client ID and Client Secret, within your OpenApply account:
+To get your `Client ID` and `Client Secret`, within your OpenApply account:
 
-1. Navigate to Settings and open the Public API page for which you would like to add a new application.
+1. Go to **Settings** and open the **Public API** page where you want to add a new application
 
-2. You will find your Client ID, Client Secret, and Redirect URI on this page.
+2. Find your `Client ID`, `Client Secret`, and` Redirect URI` on this page
 
-> Redirect URI should be {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
+> Redirect URI should be `https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback`
 
 ### OpenApply Account (name)
 
-Your OpenApply account as displayed in your account URL. Example: if your account URL was https://<span>demo.openapply.</span>com then your account name would be **demo**.
+Your OpenApply account is displayed in your account URL. 
 
-### Connector Setup
+For example, if your account URL is `https://demo.openapply.com`  your account name is `demo`.
 
-1. Locate the OpenApply connector
+</div>
 
-   > Cyclr Console > Connectors > Connector Library > OpenApply
+</section>
 
-2. From the Edit Connector interface click 'Setup'
+<section class="setup cyclr" markdown="1">
 
-3. Enter your Client ID, Client Secret and OpenApply Account Name, click 'Next'
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+1. Go to your Cyclr Console
+2. Go to **Connectors** > **Connector Library**
+3. Find the **OpenApply** connector
+2. From the **Edit Connector** interface click **Setup**
+3. Enter your `Client ID`, `Client Secret` and `OpenApply Account Name`
+4. click **Next**
 
 The connector is now authenticated and ready to use.
 
+</div>
+
+</section>
+
+<section class="userguide" markdown="1">
+
 ## User Guide
+
+<div class="section-content" markdown="1">
+
 
 ### Custom Fields
 
@@ -51,3 +76,8 @@ The "Field Location" format for each of the supported methods is as follows:
 | Search Students By Tag          | [students].custom_fields.<em>FieldName</em> | [students].custom_fields.eyeColour |
 
 The following is a guide for adding custom fields to a method: [adding custom fields](https://docs.cyclr.com/adding-custom-fields).
+
+
+</div>
+
+</section>

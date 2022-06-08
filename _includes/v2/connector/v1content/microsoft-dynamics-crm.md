@@ -1,8 +1,7 @@
 
-# Dynamics CRM #
+<section class="setup partner" markdown="1">
 
-Partner Setup
--------------
+## Partner Setup
 
 Dynamics CRM Online uses OAuth 2. Please sign up for an application on Microsoft first and get an OAuth client ID and client secret.
 
@@ -46,9 +45,15 @@ We will summarise it in a few points:
 
 Dynamics CRM Online connector is now set up! You can test it by installing it in one of your customer accounts.
 
+</div>
 
-Installing the Connector using the Cyclr API
----------------------
+</section>
+
+<section class="userguide" markdown="1">
+
+## Connector installation using Cyclr API Setup
+
+<div class="section-content" markdown="1">
 
 If you're installing the Microsoft Dynamics CRM Connector using the Cyclr API as part of an automated process, before obtaining an authentication token you should set the domain of the Dynamics CRM Online instance as follows:
 
@@ -67,8 +72,15 @@ curl -X POST
 
 After successfully creating the Account Connector Property, you can get a one-time sign-in token and call _/UpdateAccountConnectorOAuth_ to complete the user challenge.
 
-FAQ
----
+</div>
+
+</section>
+
+<section class="faq" markdown="1">
+
+## FAQ
+
+<div class="section-content" markdown="1">
 
 ### Error: AADSTS500011
 
@@ -93,3 +105,7 @@ Warning: Ensure lowercase is used for the operators. i.e. AND will not work, and
 
 ### Additional Fields To Return
 Some methods provide "Additional Fields To Return" field. This can be used to return addtional data. e.g. Add a custom response field to the method and add the custom field to Additional Fields To Return, to tell the API to return. If there is more than one field use "," seperator.
+
+</div>
+
+</section>

@@ -1,5 +1,9 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
+
+<div class="section-content" markdown="1">
 
 **Many of the Microsoft Teams endpoints are protected, due to them handling sensitive data. This requires you to apply for permission to use them from Microsoft via [this request form](https://docs.microsoft.com/en-us/graph/teams-protected-apis). 
 Do note that this process can take up to a week to get approved, during which you cannot use the protected methods.**
@@ -64,15 +68,24 @@ From the Application view (after the creation of the Application in step 3), nav
 
 More information: https://docs.microsoft.com/en-us/graph/permissions-reference
 
-### Cyclr Setup
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
 
 Setup your Microsoft Teams App within Cyclr:
 
-*   Go to your **Cyclr Console**
-*   Click the **Connectors** menu along the top
-*   Choose **Application Connector Library**
-*   Locate the **Microsoft Teams** entry
-*   Click the **Setup** button
+- Go to your **Cyclr Console**
+- Click the **Connectors** menu along the top
+- Choose **Application Connector Library**
+- Locate the **Microsoft Teams** entry
+- Click the **Setup** button
 
 Enter the following values:
 
@@ -83,3 +96,8 @@ Enter the following values:
 **Tenant ID**: This is the Directory ID found below the Client ID in the portal
 
 Your Microsoft Teams Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>
+

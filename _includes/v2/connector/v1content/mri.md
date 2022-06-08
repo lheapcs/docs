@@ -1,18 +1,38 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
 
-### Retrieving Username
-Your username is s C1, your Web Services user name is U1, your Web Services user password is Password, your MRI application database name is D1, and your assigned MIX partner key is P1. With the above information, your API user name would be "C1/D1/U1/P1".
+<div class="section-content" markdown="1">
 
-### Cyclr Setup
+### Username
+
+The MRI API username convention concatenates the following items, for example:
+- your username is  C1
+- your Web Services user name is U1
+- your MRI application database name is D1
+- your assigned MIX partner key is P1
+- your Web Services user password is Password
+
+With the above information, the API user name is `C1/D1/U1/P1`.
+
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your MRI App within Cyclr:
 
-*   Go to your **Cyclr Console**
-*   Click the **Connectors** menu along the top
-*   Choose Connector Library
-*   Scroll down to **MRI**
-*   Click the **Setup** button
+- Go to your **Cyclr Console**
+- Click the **Connectors** menu along the top
+- Choose Connector Library
+- Scroll down to **MRI**
+- Click the **Setup** button
 
 Enter the following values:
 
@@ -24,3 +44,8 @@ Enter the following values:
 
 
 Your MRI Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>
+

@@ -1,19 +1,33 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
 
-#### Retrieving API key
-*   In your OnceHub account, navigate to ScheduleOnce > Setup > Integrations > API Integration.
-* Note down the API key shown in the centre of the window.
+<div class="section-content" markdown="1">
 
-### Cyclr Setup
+### API key
+
+- Login to your OnceHub account
+- Go to **ScheduleOnce** > **Setup** > **Integrations** > **API Integration**
+- Note the `API Key` shown in the centre of the window
+
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your OnceHub App within Cyclr:
 
-*   Go to your **Cyclr Console**
-*   Click the **Connectors** menu along the top
-*   Choose Connector Library
-*   Scroll down to **OnceHub**
-*   Click the **Setup** button
+- Go to your **Cyclr Console**
+- Click the **Connectors** menu along the top
+- Choose Connector Library
+- Scroll down to **OnceHub**
+- Click the **Setup** button
 
 Enter the following values:
 
@@ -22,3 +36,8 @@ Enter the following values:
 **API Key**: Retrieved from previous steps.
 
 Your OnceHub Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>
+

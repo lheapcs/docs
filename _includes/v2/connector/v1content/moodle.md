@@ -1,5 +1,9 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
+
+<div class="section-content" markdown="1">
 
 To authenticate the Moodle connector you will need an `API Token`. This is obtained by setting up an application within your Moodle environment.
 
@@ -24,6 +28,7 @@ After the first step you will reach a page that allows customisation of this rol
 
 You must enable all the capabilities listed in the table below. Copying and pasting is recommended to save time. Once this is done click "Create this role".
 
+
 | User Capability    |
 | ------------------ |
 | moodle/course:view |
@@ -38,11 +43,13 @@ You must enable all the capabilities listed in the table below. Copying and past
 | enrol/manual:enrol |
 | moodle/grade:view |
 
+
 You now need to assign this role to the user. To do this you need to navigate to `Site Administration > Users > Permissions > Assign system roles`
 
 Click the role you have just created, and then on the next page assign the user.
 
 For *Step 6* you will need to enable the following functions to be able to use all Cyclr methods:
+
 
 | Service Functions               |
 | ------------------------------- |
@@ -79,3 +86,7 @@ Once the Moodle Web Service application has been created, you need to create a t
 ![](./images/moodle2.png)
 
 Copy this token, and use it to authenticate in Cyclr.
+
+</div>
+
+</section>

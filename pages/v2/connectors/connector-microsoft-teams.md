@@ -7,7 +7,7 @@ icon: https://my.cyclr.com/api/ConnectorIcon/15339
 default_header: false
 category: Collaboration
 categories: [Collaboration,Chat]
-showv1content: false
+showv1content: true
 ---
 {% assign connectordata = site.data.v2.connectors.connector-microsoft-teams %}
 {% assign v1content = "microsoft-teams.md" %}

@@ -1,11 +1,19 @@
 
-Microsoft Office 365 uses OAuth 2.0. Please sign up for an application on Microsoft first and get an OAuth client ID, client secret.
+<section class="setup partner" markdown="1">
+
+## Partner Setup
+
+<div class="section-content" markdown="1">
+
+Microsoft Office 365 uses OAuth 2.0. 
+
+Sign up for an application on Microsoft to get your OAuth `Client ID` and `Client Secret`.
 
 ### Azure Active Directory OAuth Application
 
-See here for the [official documentation for creating an Azure Active Directory application](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications).
+See  the [official documentation for creating an Azure Active Directory application](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) for full information.
 
-To Summarize the above documentation:
+To Summarise the above documentation:
 
 1. Either log into your existing Azure account or [register for a free Azure account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 2. In your Microsoft Azure portal go to -> Azure Active Directory -> App Registrations -> New application registration.
@@ -56,12 +64,27 @@ From the Application view (after the creation of the Application in step 3), nav
 More information: https://docs.microsoft.com/en-us/graph/permissions-reference
 
 
-### Connector Setup
-Go to Cyclr Console (https://yourCyclrInstance/console) > Connectors > Application Connector Library > Microsoft Office 365 > Setup
+</div>
 
-   **Client ID**: This is the Application ID displayed in the portal
+</section>
 
-   **Client Secret**: Create a Password under Microsoft Azure portal > Azure Active Directory > App Registrations > Your Application > API Access > Keys. Copy and paste the password as the client secret. 
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+- Go to your Cyclr Console (https://yourCyclrInstance/console) 
+- Go to **Connectors** > **Application Connector Library**
+- Find the Microsoft Office 365 connector
+- Click **Setup**
+- Enter your `Client ID`: the Application ID displayed in the portal
+- Enter your `Client Secret`: 
+   - Create a Password at **Microsoft Azure portal** > **Azure Active Directory** > **App Registrations** > **Your Application** > **API Access** > **Keys** 
+   - Copy and paste the password as the Client Cecret 
 
 You are now ready to install the Connector.  When you do so you will need the **Tenant ID**.  This is the Directory ID found below the **Client ID** in the portal.
 
+</div>
+
+</section>
