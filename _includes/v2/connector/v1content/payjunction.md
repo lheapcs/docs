@@ -1,16 +1,27 @@
 
-## Partner Setup ##
+<section class="setup partner" markdown="1">
+
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 This document will explain what is needed to setup access to PayJunction and install the connector.
 
-### PayJunction Details ###
+### PayJunction Details
 
-1. Request an application key from PayJunction. Details on how to do this are [here](https://developer.payjunction.com/hc/en-us/articles/216477387-Application-Keys).
+Request an application key from PayJunction. 
 
-### Connector Setup ###
+See [PayJunction Application Keys documentation](https://developer.payjunction.com/hc/en-us/articles/216477387-Application-Keys) for details.
+
+### Connector Setup
 There are multiple steps in the connection setup:
 1. Choose the required domain:
-    1. https://api.payjunctionlabs.com for test sandbox environment. More details about the sandbox environment can be found [here](https://developer.payjunction.com/hc/en-us/articles/216477397-Development-Sandbox).
-    2. https://api.payjunction.com for production environment.
-2. Enter the PayJunction application key.
-3. Enter your PayJunction username and password. 
+    - https://api.payjunctionlabs.com for test sandbox environment, see the [sandbox environment documentation] (https://developer.payjunction.com/hc/en-us/articles/216477397-Development-Sandbox) for more information
+    - https://api.payjunction.com for production environment
+2. Enter the PayJunction `Application Key`
+3. Enter your PayJunction username and password
+
+</div>
+
+</section>
+

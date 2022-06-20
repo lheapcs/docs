@@ -1,11 +1,15 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
 
-#### Login / Sign Up
+<div class="section-content" markdown="1">
+
+### Login / Sign Up
 
 Login to PayTrace [here](https://www.paytrace.com/login.pay) or begin the sign up process by initially contacting them via their [website](https://paytrace.net/contact-us/).
 
-#### Setting up your Account
+### Account Setup
 
 For your API integrations to work, your Paytrace account must:
 
@@ -16,7 +20,15 @@ To request your integrator_id, submit a [sandbox request](https://www.paytrace.n
 
 For further information, please see the [Official PayTrace documentation](https://developers.paytrace.com/support/home#14000046858).
 
-### Cyclr Setup
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your PayTrace within Cyclr:
 
@@ -33,3 +45,7 @@ Enter the following values:
 **Integrator ID**: Your integrator_id.
 
 Your PayTrace Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>

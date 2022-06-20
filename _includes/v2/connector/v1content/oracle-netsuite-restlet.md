@@ -1,7 +1,11 @@
 
+<section class="setup partner" markdown="1">
+
 ## RESTlet Installation
 
-To enable REST APIs in NetSuite, a "RESTlet" file must be deployed in your NetSuite account.
+<div class="section-content" markdown="1">
+
+To enable REST APIs in NetSuite, a **RESTlet** file must be deployed in your NetSuite account.
 
 To support the NetSuite Connector, Cyclr has its own RESTlet file.  Please get in touch with your Support Team to request this.
 
@@ -11,15 +15,13 @@ Once you have the Cyclr RESTlet file, follow the steps in this documentation.
 
 Your NetSuite Account ID is required when installing the NetSuite Connector within Cyclr and is found in your NetSuite account.
 
-In NetSuite to go **Setup** > **Company** > **Company Information**
-
-Then look for **ACCOUNT ID**.
-
-It might also be located under **Setup** > **Integration** > **Webservice Preferences**
+- In NetSuite to go **Setup** > **Company** > **Company Information**
+- look for **ACCOUNT ID**
+- This may also be found under **Setup** > **Integration** > **Webservice Preferences**
 
 ### Upload the RESTlet script to NetSuite
 
-You can upload the RESTlet script file to NetSuite from Customization > Scripting > Scripts > New. Make sure you select RESTlet as the Type and enter the GET / POST / DELETE / PUT function names based on your RESTlet script.
+You can upload the RESTlet script file to NetSuite from **Customization** > **Scripting** > **Scripts** > **New**. Make sure you select RESTlet as the Type and enter the GET / POST / DELETE / PUT function names based on your RESTlet script.
 
 ![Example1](./images/Netsuite_1.png)
 
@@ -49,7 +51,17 @@ Create an access token from Setup > Users/Roles > Access Tokens > New. The appli
 
 Make a note of the token ID and token secret. Cyclr will ask for them when you install the NetSuite connector.
 
-## Setting select and multiselect Fields
+</div>
+
+</section>
+
+<section class="userguide" markdown="1">
+
+## User Guide
+
+<div class="section-content" markdown="1">
+
+### Setting select and multiselect Fields
 
 When setting `select` and `multiselect` fields in a create or update method, you can either provide its `internalid` (actual value in NetSuite) or `name` (UI display text in NetSuite).
 
@@ -89,7 +101,7 @@ Examples:
 
 If both `internalid` and `name` are provided, only the `internalid` will be used in the RESTlet.
 
-## Filtering Objects 
+### Filtering Objects 
 
 The "List" methods, which return multiple items when run, can be filtered to match specified criteria using the following Fields:
 
@@ -97,7 +109,7 @@ The "List" methods, which return multiple items when run, can be filtered to mat
 - `Operator` \*required: is the operation you wish to run against the field e.g. "is", "greaterthan", "contains". See the table below for an extensive list of operators and field types against which they can be used.
 - `Value` \*optional: is the value against which the fields will be compared using the Operator value.
 
-### Multiple Filter Conditions
+#### Multiple Filter Conditions
 
 Sometimes you may need to use more than one filter condition.  To do this you'll need to use some Script in the NetSuite Step to add them in.  In the Builder, click the `Step Setup` button on the NetSuite Step, then choose `Advanced Settings` and enter Script similar to this:
 
@@ -125,9 +137,15 @@ method_request_parameters.filter_op_X
 method_request_parameters.filter_val_X
 ```
 
-You can add any number of filter conditions using Script as you require.  Just be sure that the numbers on the end of the properties are consecutive, without any breaks.  If you add properties for "..._2", "..._3", skip 4 and add them for "..._5", your fifth condition will be ignored.
+You can add any number of filter conditions using Script as you require.  Just be sure that the numbers on the end of the properties are consecutive, without any breaks.  
 
-*NOTE:* In the "List" methods you can opt to skip the filters in the connector parameters and simply define all of your filters in script. To do this you will need to start the script parameters from "..._1" e.g. `method_request_parameters.filter_field_1`. However, the "Get New/Updated" methods' script parameters must always be set from "..._2", as the first set are already defined by the step itself.
+If you add properties for "...\_2", "...\_3", skip 4 and add them for "...\_5", your fifth condition will be ignored.
+
+**NB**: In the `List` methods you can opt to skip the filters in the connector parameters and simply define all of your filters in script. 
+
+To do this you will need to start the script parameters from "...\_1" e.g. `method_request_parameters.filter_field_1`. 
+
+However, the "Get New/Updated" methods' script parameters must always be set from "...\_2", as the first set are already defined by the step itself.
 
 ### Operators and Valid Field Types
 
@@ -172,10 +190,14 @@ You can add any number of filter conditions using Script as you require.  Just b
 |startswith||||||X||
 |within|||X|||||
 
-## NetSuite Saved Search to return 1000+ records
+### NetSuite Saved Search to return 1000+ records
 
 To retrieve more than 1,000 records, you will need to create a **Saved Search** in NetSuite, and then use the appropriate **Run (object) Saved Search** Method in the NetSuite Connector for the type of data you're returning, e.g. **Run Contact Saved Search**.
 
 Your Saved Search should have criteria set for what you wish to retrieve and return only the ID values of the objects.  The RESTlet will then retrieve the full objects for them before returning that data when called by Cyclr.
 
 You can find instructions for setting up a Saved Search in the [NetSuite Documentation](https://docs.oracle.com/cloud/latest/netsuitecs_gs/NSSRC/NSSRC.pdf#%5B%7B%22num%22%3A1548%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C90%2C723.6%2Cnull%5D).
+
+</div>
+
+</section>
