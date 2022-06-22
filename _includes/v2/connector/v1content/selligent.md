@@ -1,7 +1,9 @@
 
-# Selligent
+<section class="setup partner" markdown="1">
 
 ## Partner Setup
+
+<div class="section-content" markdown="1">
 
 To use the Selligent connector, you will need 
 
@@ -24,3 +26,8 @@ The API user must assign specific rights, indicating what operations can be perf
 ![connector setup](./images/APIUserRights.png)
 
 Once this is done, the Server, Username and Password (Key) can be entered when installing the connector.
+
+</div>
+
+</section>
+

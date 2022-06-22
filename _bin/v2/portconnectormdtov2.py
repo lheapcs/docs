@@ -98,6 +98,7 @@ md_dict = {
 "Salesloft":"salesloft",
 "salesnexus_docs":"salesnexus",
 "sap_successfactors":"sap-successfactors",
+"servicefusion":"service-fusion",
 "service_monster_setup":"servicemonster",
 "service_now_docs":"servicenow",
 "serviceminder":"serviceminder-io",

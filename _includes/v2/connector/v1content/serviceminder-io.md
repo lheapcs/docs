@@ -1,14 +1,28 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
 
-First, login to [serviceminder.io](https://serviceminder.io/)
+<div class="section-content" markdown="1">
 
-Go to Administration > Control Panel > API Keys and create a new API key.
+Go to **Administration** > **Control Panel** > **API Keys** and create a new API Key.
 
-### Cyclr Setup
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Enter the following values:
 
-**APIKey**:  The APIKey that was provided by the above steps.
+**APIKey**:  The API Key tprovided by the above steps.
 
 Your connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>

@@ -1,7 +1,9 @@
 
-## Setup
+<section class="setup partner" markdown="1">
 
-### Authentication Credentials
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 To authenticate the ServiceMonster connector you will need a username and password. Please note, these are not the same as your ServiceMonster login credentials.
 
@@ -13,7 +15,15 @@ To obtain a username and password for use with the API/connector:
 4. Select a role, usually Admin and supply a note (optional), click "Submit"
 5. A set of API Credentials will appear. Make sure you save the password, as it will not be retrievable if you lose it
 
-### Authenticate the Connector
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 1. Locate the Service Monster connector
 
@@ -24,3 +34,8 @@ To obtain a username and password for use with the API/connector:
 3. Enter your Username and Password, click 'Next'
 
 The connector is now authenticated and ready to use.
+
+</div>
+
+</section>
+

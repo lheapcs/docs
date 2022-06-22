@@ -1,5 +1,9 @@
 
-## Partner Setup ##
+<section class="setup partner" markdown="1">
+
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 SendGrid uses an API key for authentication, so you must gain an API key by visiting the SendGrid website.
 
@@ -17,3 +21,7 @@ Fill this out as you please, and then click "Create & View". You will then be gr
 This key lets you integrate SendGrid with Cyclr. You can now navigate to the Connectors menu through the Cyclr Console, and then the Connector Library where you can click the setup button and enter your API key into the input box.
 
 Your end-users should now be able to install the Connector into their own accounts.
+
+</div>
+
+</section>

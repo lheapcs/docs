@@ -1,9 +1,24 @@
 
-## Authentication
+<section class="setup partner" markdown="1">
+
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 Please refer to [this document](https://docs.cyclr.com/salesforce-connector) for a guide to authenticating Salesforce connectors.
 
-## Upsert Custom Data Extension Rows
+
+</div>
+
+</section>
+
+<section class="userguide" markdown="1">
+
+## User Guide
+
+<div class="section-content" markdown="1">
+
+### Upsert Custom Data Extension Rows
 
 The Salesforce Marketing Cloud connector gives you have the ability to Upsert (create or update) a batch of data extension rows.
 
@@ -97,3 +112,8 @@ If adding fields manually, for Field Location:
 **Valid** - property has parent array
 
 > [].keys.EmailAddress
+
+
+</div>
+
+</section>

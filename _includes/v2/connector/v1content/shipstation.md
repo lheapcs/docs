@@ -1,5 +1,9 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
+
+<div class="section-content" markdown="1">
 
 To setup the ShipStation connector, you will need a ShipStation API Key, and API Secret.
 
@@ -14,6 +18,19 @@ To setup the ShipStation connector, you will need a ShipStation API Key, and API
 
 > If you've already generated your API keys, the existing API keys will be displayed here and the button will say Regenerate API Keys.
 
-## Setting up the ShipStation Connector
+</div>
 
-You can now use the Key and Secret retrieved on the previous step, to authenticate the connector.  Enter the Key in the ``Username`` field, and the Secret in the ``Password`` field.
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+You can now use the Key and Secret retrieved on the previous step, to authenticate the connector.  Enter the Key in the **Username** field, and the Secret in the **Password** field.
+
+</div>
+
+</section>
+

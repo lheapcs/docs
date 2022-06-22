@@ -1,32 +1,34 @@
 
+<section class="setup partner" markdown="1">
+
 *This guide applies to Salesforce, Salesforce Service Cloud, and other services that use Salesforce authentication.*
 
-# Partner Setup
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 Salesforce uses OAuth 2 for remote API access. You must register Cyclr within Salesforce as your own Connected App to receive OAuth Client ID and Client Secret values to enable Cyclr to authenticate with Salesforce.
 
 The official Salesforce documentation for creating a **Connected App** can be found [here](https://help.salesforce.com/articleView?id=connected_app_create.htm).
 
-## Salesforce Setup: Register Your Application
-
-### Introduction
+### Register Your Application
 
 You can register for a free [Salesforce Developer Edition account here (click **Sign Up** at the top of that page)](https://developer.salesforce.com/) or log into your existing Salesforce account if you have one. 
 
 You can use any Salesforce account to create a Connected App, it doesn't have to be a Developer Edition account.
 We advise against using a Sandbox account as Connected Apps are destroyed when they are refreshed.
 
-### Create your App within Salesforce
+#### Create your App within Salesforce
 
 The process of creating an app in Salesforce varies slightly depending upon whether you are using **Salesforce Classic**, or **Lightning Experience**.
 
-#### Salesforce Classic 
+##### Salesforce Classic 
 1. Log into your Salesforce account
 2. Click **Setup** in the top right
 3. From the menu on the left, select **Build > Create > Apps**
 4. From the **Connected Apps** table click **New**
 
-#### Lightning Experience
+##### Lightning Experience
 1. Log into your Salesforce account
 2. Click **Setup** in the top right
 3. From the menu on the left, select **Platform Tools  >  Apps  >  App Manager**
@@ -68,13 +70,21 @@ After saving your App, make a note of your **Consumer Key** and **Consumer Secre
 
 If you attempt to use your app before it has had time to update, you may encounter this error.
 
-### Cyclr Setup
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your Salesforce App within Cyclr:
 
 - go to your **Cyclr Console**
 - click the **Connectors** menu along the top
-- choose Connector Library
+- choose **Connector Library**
 - scroll down to **Salesforce**
 - click the **Setup** button
 
@@ -99,7 +109,15 @@ Under **Session Timeout**
 Under **Session Settings**
 - Lock sessions to the IP address from which they originated: disable this.
 
+</div>
+
+</section>
+
+<section class="faq" markdown="1">
+
 ## FAQ
+
+<div class="section-content" markdown="1">
 
 ### Expired access/refresh token errors
 
@@ -131,3 +149,8 @@ To retrieve the contents of a CSV document, you will need to take the following 
 2. Use this ID in a ``Get Content Version`` call to get the Content Version ID.
 3. Enter the Content Version ID in a ``Get Content Document Data (CSV)`` call.
 4. You will need to add the fields within connector settings so that you can map them.  The field location will be ``[].yourcolumname`` .
+
+</div>
+
+</section>
+

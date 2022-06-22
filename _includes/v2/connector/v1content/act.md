@@ -3,14 +3,14 @@
 
 ## Partner Setup
 
+<div class="section-content required" markdown="1">
+
 ### Domain
 
 | Domain | Value | Example | 
 | --- | --- | --- | 
 | Cloud | Your Act address, substituting **api** for **app** | ``appeu.act.com``  enter ``apieu.act.com `` |
 | Self-Hosted | Your instance domain, including your database name with the suffix **-api** |``{act-domain-name}.com/{db-name}-api``|
-
-<div class="section-content required" markdown="1">
 
 Enter your account and other details:
 

@@ -1,9 +1,13 @@
 
-## Accessing Custom Objects in Salesforce
+<section class="setup partner" markdown="1">
+
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 First you will need the API name of your object.  The process of finding this is slightly different depending upon whether you use Salesforce *Lightning Edition* or Salesforce *Classic*.
 
-#### Finding the API name in Salesforce (Lightning)
+### Finding the API name in Salesforce (Lightning)
 
 1. Click the Setup Cog, and choose **Setup**.
 
@@ -13,14 +17,14 @@ First you will need the API name of your object.  The process of finding this is
 
 3. Find the Custom Object in the list, and identify its **API Name**.  This will be something like `My_Custom_Object__C`.
 
-#### Finding the API name in Salesforce (Classic)
+### Finding the API name in Salesforce (Classic)
 
 1. Select **Setup**
 2. In the left navigational menu, select **Build** > **Create** > **Objects**
 3. Find the Custom Object in the list, and select it by clicking its name.
 4. In the next screen you will see the object's **API Name**.  This will be something like `My_Custom_Object__C`.
 
-#### Using the Custom Object within Cyclr
+### Using the Custom Object within Cyclr
 
 1. Access Connector Settings for the Salesforce Connector.
 
@@ -45,3 +49,7 @@ First you will need the API name of your object.  The process of finding this is
 8. Click the magnifying glass to bring up the **Generate Fields** window.  Paste the response from step 6 in here and click **Generate**.  This will add all the required fields to your List Records method.
 
 9. Repeat steps 5-8, this time using the method **Get Record By ID 1**.  If you need an ID to use here, you can find one by running **List Records** again.
+
+</div>
+
+</section>

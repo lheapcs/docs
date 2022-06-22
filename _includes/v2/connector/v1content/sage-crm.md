@@ -1,5 +1,9 @@
 
-### Cyclr Setup
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your Sage CRM App within Cyclr:
 
@@ -11,15 +15,24 @@ Setup your Sage CRM App within Cyclr:
 
 Enter the following values:
 
-* **Base URL**: Externally accessible URL of your instance. e.g. "https://crm.mysageinstance.com".
+- **Base URL**: Externally accessible URL of your instance. e.g. "https://crm.mysageinstance.com".
 
-* **Username**:  The username you use to login to your Sage CRM instance.
+- **Username**:  The username you use to login to your Sage CRM instance.
 
-* **Password**: The password you use to login to your Sage CRM instance.
+- **Password**: The password you use to login to your Sage CRM instance.
 
 
 Your Sage CRM Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
 
+</div>
+
+</section>
+
+<section class="userguide" markdown="1">
+
+## User Guide
+
+<div class="section-content" markdown="1">
 
 ### Custom Entity category
 
@@ -32,3 +45,7 @@ You can create custom object categories that allow you to access custom object d
 5. The custom category created appears in your **Methods & Fields** list.
 
 You can use this to list and retrieve individual objects based on the entered name of the custom object. More information can be found [here](https://docs.cyclr.com/enhanced-objects).
+
+</div>
+
+</section>
