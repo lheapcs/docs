@@ -88,7 +88,7 @@ md_dict = {
 "rockgympro":"rock-gym-pro",
 "rybbon_setup_docs":"rybbon",
 "sage50":"sage-50",
-"sage50cloud":"sage-50-cloud",
+"sage50cloud":"sage-50cloud",
 "salesforce_chatter":"salesforce-chatter",
 "Salesforce_External_ID_Setup":"salesforce-external-id",
 "salesforce_marketing_cloud":"salesforce-marketing-cloud",

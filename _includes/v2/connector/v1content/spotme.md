@@ -1,7 +1,9 @@
 
-# Setup
+<section class="setup partner" markdown="1">
 
-## Authentication Credentials
+## Partner Setup
+
+<div class="section-content" markdown="1">
 
 To authenticate the SpotMe connector you will need a Workspace ID and an API Key.
 
@@ -35,7 +37,15 @@ To authenticate the SpotMe connector you will need a Workspace ID and an API Key
 
    ![token](./images/spotme_interface_6.png)
 
-## Connector Setup
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 1. Locate the SpotMe connector
 
@@ -48,3 +58,8 @@ To authenticate the SpotMe connector you will need a Workspace ID and an API Key
 4. Enter your API Key and click 'Next'
 
 The connector is now authenticated and ready to use.
+
+</div>
+
+</section>
+
