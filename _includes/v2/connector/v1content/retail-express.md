@@ -1,21 +1,33 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
+
+<div class="section-content" markdown="1">
 
 To access the API, you will need to contact support to request a client code (GUID) and unique URL. 
 
-#### Retrieving Authentication Details
+### Retrieving Authentication Details
 
 You can access the client ID by hovering over "Help & Support" on the web interface and click "What's my Client ID". 
 
-### Cyclr Setup
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your Retail Express App within Cyclr:
 
-*   Go to your **Cyclr Console**
-*   Click the **Connectors** menu along the top
-*   Choose Connector Library
-*   Scroll down to **Retail Express**
-*   Click the **Setup** button
+- Go to your **Cyclr Console**
+- Click the **Connectors** menu along the top
+- Choose **Connector Library**
+- Scroll down to **Retail Express**
+- Click the **Setup** button
 
 Enter the following values:
 
@@ -29,3 +41,7 @@ Enter the following values:
 
 
 Your Retail Express Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>

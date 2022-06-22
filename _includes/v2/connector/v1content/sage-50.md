@@ -1,11 +1,15 @@
 
+<section class="setup partner" markdown="1">
+
 ## Partner Setup
+
+<div class="section-content" markdown="1">
 
 First, login to your existing Sage Developer account or [sign up for one](https://developerselfservice.sageone.com/).
 
 Also login to your existing Sage Business Cloud Accounting account or [sign up for a free trial](https://www.sageone.com/?clear&filter=apiv3.1).
 
-#### Retrieving OAuth2 Details
+### Retrieving OAuth2 Details
 
 - [Login](https://developerselfservice.sageone.com/) to your Sage Developer Account.
 - Click **Create App**. 
@@ -14,7 +18,15 @@ Also login to your existing Sage Business Cloud Accounting account or [sign up f
 - Click **Save**.
 - Note the **client ID** and **secret**.
 
-### Cyclr Setup
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 Setup your Scoro App within Cyclr:
 
@@ -32,3 +44,8 @@ Enter the following values:
 
 
 Your Sage 50 Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+
+</div>
+
+</section>
+

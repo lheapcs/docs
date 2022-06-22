@@ -10,17 +10,17 @@ To authenticate the connector you need a `Client ID` and `Client Secret`.
 To obtain these, you will need to create a QuickBooks Online application.
 
 ### Creating an App
-1. Visit [https://developer.intuit.com/app/developer/myapps](https://developer.intuit.com/app/developer/myapps).
-2. Click the ![](./images/QuickBooksCreateAnApp.png) button.
-3. Select `QuickBooks Online and Payments`.
-4. Give your app a name, and select `Accounting` from the scopes.  If you are based in the US, and wish to add the `Payments` scope, you can add this later.
+1. Go to [https://developer.intuit.com/app/developer/myapps](https://developer.intuit.com/app/developer/myapps)
+2. Click the ![](./images/QuickBooksCreateAnApp.png) button
+3. Select **QuickBooks Online and Payments**
+4. Give your app a name, and select `Accounting` from the scopes -  if you are based in the US, and wish to add the `Payments` scope, you can add this later.
 5. Click ![](./images/QuickBooksCreateApp.png).
-    > Note that there are sections here for `Development` and `Production` apps.  We will be focussing on the `Development` app in this guide.
-6. `Under Development > Keys & OAuth`, you will find two important sections: the keys (`Client ID` and `Client Secret`) **which you should now note down**, and `Redirect URIs`.
+    > Note that there are sections here for **Development** and **Production** apps - in this guide we focus on the **Development** app 
+6. Under **Development** > **Keys & OAuth**, see the two sections: the keys `Client ID` and `Client Secret` **which you should now note**, and `Redirect URIs`
 7. Under `Redirect URIs`, change the existing value to:
- ht<span></span>tps://`ServiceDomain`/connector/callback
+    `https://[ServiceDomain]/connector/callback`
 
-    > Your Cyclr service domain, e.g. yourcompany-h.cyclr.com can be found in your Cyclr Console under ``Settings > General Settings > Service Domain``.
+    > Your Cyclr service domain, e.g. yourcompany-h.cyclr.com can be found in your Cyclr Console under **Settings** > **General Settings** > Service Domain**
 
 8. Scroll down and click ![](./images/QuickBooksSave.png).
 
