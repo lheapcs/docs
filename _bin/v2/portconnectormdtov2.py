@@ -78,6 +78,7 @@ md_dict = {
 "opencrm_setup":"opencrm",
 "petexec_setup":"petexec",
 "PhoneBurner":"phoneburner",
+"pipedrive-oauth-connector":"pipedrive-oauth2-0",
 "podio_docs":"podio",
 "ProfitWell":"profitwell",
 "retail_express":"retail-express",

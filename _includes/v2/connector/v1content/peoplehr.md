@@ -1,17 +1,34 @@
 
-## Partner Setup ##
+<section class="setup partner" markdown="1">
 
-This document will explain what is needed to setup access to PeopleHR and install the connector.
+## Partner Setup
 
-### PeopleHR API key ###
+<div class="section-content" markdown="1">
 
-Within PeopleHR configure the API Key:
+Within PeopleHR configure the `API Key`:
 
-1. Go to the PeopleHR domain. The usual format for this domain is https://\[Company-Name\].peoplehr.net
-2. Go to "Settings", "API". Contact PeopleHR support to get access to an API key if needed.
-3. Click the "+" button, and enter a name for the key. Select the actions that the API key will have access to. Click "Save".
-4. Click on the API that was created and copy the API key from the appropriate field.
+1. Go to the PeopleHR domain. The usual format for this domain is `https://\[Company-Name\].peoplehr.net`
+2. Go to **Settings** > **API** Contact PeopleHR support to get access to an API key if needed.
+3. Click the **+** button
+4. Ennter a name for the key
+5. Select the actions to be accessed by the API Key
+6. Click **Save**
+4. Click the API you have created
+8. Note the `API Key` 
 
-### Connector Setup ### 
- * In the connector setup enter the API key obtained above.
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
+
+In the connector setup enter the `API Key` obtained above.
+
+</div>
+
+</section>
 
