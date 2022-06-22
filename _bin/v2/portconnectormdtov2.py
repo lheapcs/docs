@@ -5,8 +5,9 @@
 # discards the front matter and writes all content after front matter to the target file
 #
 # manual amends to the created filename where the source filename does not conform to the slugified connector naming convention
-import os;
-import glob;
+import os
+import glob
+import argparse
 
 md_dict = {
 "3DCart":"3d-cart",
@@ -24,6 +25,7 @@ md_dict = {
 "breathehr":"breathe-hr",
 "calendly_setup":"calendly",
 "CampusIvy":"campusivy",
+"canvas":"instructure-canvas",
 "capsule-v2":"capsule",
 "Cardpointe":"cardpointe",
 "casavi_setup":"casavi",
@@ -81,6 +83,7 @@ md_dict = {
 "pipedrive-oauth-connector":"pipedrive-oauth2-0",
 "podio_docs":"podio",
 "ProfitWell":"profitwell",
+"quora_ads":"quora-ads",
 "retail_express":"retail-express",
 "rockgympro":"rock-gym-pro",
 "rybbon_setup_docs":"rybbon",
@@ -119,21 +122,24 @@ md_dict = {
 "Voyado":"voyado",
 "xero_oauth20":"xero-oauth20"
 }
-source_folder = '../../pages/connector-authentication/*.md'
-source_folder_full = os.path.join(os.path.dirname(__file__), source_folder)
-target_folder = '../../_includes/v2/connector/v1content/'
-target_folder_full = os.path.join(os.path.dirname(__file__), target_folder)
-for filename in glob.glob(source_folder_full):
+
+parser = argparse.ArgumentParser(description='Port connector md to v2')
+parser.add_argument("-c", "--md", help="Get connector content for [filename].md")
+args = parser.parse_args()
+
+if args.md is not None:
+	source_file = '../../pages/connector-authentication/'+args.md+'.md'
+	source_file_full = os.path.join(os.path.dirname(__file__), source_file)
+	target_folder = '../../_includes/v2/connector/v1content/'
+	target_folder_full = os.path.join(os.path.dirname(__file__), target_folder)
 	target_file = ''
-	md_key = os.path.splitext(os.path.basename(filename))[0]
-	# print("Looking for md_dict key "+md_key)
+	md_key = args.md
 	try:
 		target_file = md_dict[md_key]+".md"
 	except KeyError:
-		target_file = os.path.basename(filename)
+		target_file = args.md+".md"
 	target_file_full = target_folder_full+target_file
-	print(filename+" copy to "+target_file_full+"\n")
-	with open(filename,'r',encoding="utf8") as fromfile, open(target_file_full,'a') as tofile:
+	with open(source_file_full,'r',encoding="utf8") as fromfile, open(target_file_full,'a') as tofile:
 		isfrontmatter = False
 		iscontent = False
 		for line in fromfile:
@@ -148,5 +154,35 @@ for filename in glob.glob(source_folder_full):
 				continue
 	fromfile.close()
 	tofile.close()
+else:
+	source_folder = '../../pages/connector-authentication/*.md'
+	source_folder_full = os.path.join(os.path.dirname(__file__), source_folder)
+	target_folder = '../../_includes/v2/connector/v1content/'
+	target_folder_full = os.path.join(os.path.dirname(__file__), target_folder)
+	for filename in glob.glob(source_folder_full):
+		target_file = ''
+		md_key = os.path.splitext(os.path.basename(filename))[0]
+		# print("Looking for md_dict key "+md_key)
+		try:
+			target_file = md_dict[md_key]+".md"
+		except KeyError:
+			target_file = os.path.basename(filename)
+		target_file_full = target_folder_full+target_file
+		print(filename+" copy to "+target_file_full+"\n")
+		with open(filename,'r',encoding="utf8") as fromfile, open(target_file_full,'a') as tofile:
+			isfrontmatter = False
+			iscontent = False
+			for line in fromfile:
+				if iscontent == True:
+					newline = line
+					tofile.write(newline)
+				elif line.startswith("---") and isfrontmatter == False:
+					isfrontmatter = True
+				elif line.startswith("---") and isfrontmatter == True:
+					iscontent = True
+				else:
+					continue
+		fromfile.close()
+		tofile.close()
 
 

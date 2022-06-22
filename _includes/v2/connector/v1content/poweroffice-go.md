@@ -5,7 +5,6 @@
 
 <div class="section-content" markdown="1">
 
-
 ### Application Key and Client Key
 - [Register](https://api.poweroffice.net/Web/docs/index.html#/Common/Registration.md) as a developer
 - Email PowerOffice Go support to retrieve an `Application Key` after account registration

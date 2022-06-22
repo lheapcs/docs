@@ -1,8 +1,11 @@
 
-QuickBooks Setup
----------------
+<section class="setup partner" markdown="1">
 
-To authenticate the connector you need a Client ID and Secret.
+## Partner Setup
+
+<div class="section-content" markdown="1">
+
+To authenticate the connector you need a `Client ID` and `Client Secret`.
 
 To obtain these, you will need to create a QuickBooks Online application.
 
@@ -21,12 +24,24 @@ To obtain these, you will need to create a QuickBooks Online application.
 
 8. Scroll down and click ![](./images/QuickBooksSave.png).
 
-### Setting up the connector
+</div>
+
+</section>
+
+<section class="setup cyclr" markdown="1">
+
+## Cyclr Setup
+
+<div class="section-content" markdown="1">
 
 1. During installation of the connector, you will be asked for `Client ID` and `Client Secret`.  Give those you noted down in stage 6 of the instructions above.
 
-2. You will also be asked for the `Base Domain`.  In this example, as we are working with a development app, you would give sandbox-quickbooks.api.intuit.com <span>.</span>
+2. You will also be asked for the `Base Domain`.  In this example, as we are working with a development app, you would give `sandbox-quickbooks.api.intuit.com`.
 
     > Later, when you have your production app set up, you will enter quickbooks.api.intuit.com here.
 
 3. You can now ![](./images/QuickBooksSignIn.png) to Quickbooks and your connector will be installed.
+
+</div>
+
+</section>
