@@ -7,8 +7,8 @@ icon: https://my.cyclr.com/api/ConnectorIcon/17131
 default_header: false
 category: CRMs
 categories: [CRMs]
-showv1content: true
+showv1content: false
 ---
 {% assign connectordata = site.data.v2.connectors.connector-access-crm %}
 {% assign v1content = "access-crm.md" %}
-{% include v2/connector/connector.html %}	
+{% include v2/connector/connector-hub.html %}	

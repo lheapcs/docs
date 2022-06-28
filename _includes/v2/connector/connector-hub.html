@@ -1,0 +1,32 @@
+<div class="post-header mt-4">
+    <div class="d-flex flex-column justify-content-between">
+        <div class="d-flex flex-row">
+            <div class="col-2">
+                <img class="img-fluid" src="{{ page.icon }}" alt="{{ page.title }} icon"/>
+            </div>
+            <div class="col-10">
+                <h1 class="post-title-main">{{ page.title }}</h1>
+                {% if connectordata.Description %}
+                <p>{{ connectordata.Description }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="tables">
+	<div class="py-4">
+		<h2 class="section-title">{{section.title}}</h2>
+		<table class="hubtable table" id="table-{{section.title | slugify}}">
+		  <tbody>
+			{% for doc in connectordata.Documentation %}
+		    <tr>
+		      <td>{{ doc.Title }}</td>
+		      <td><a href="{{ connectordata.Name  | slugify | downcase}}-{{ doc.Title | slugify | downcase }}">Go ></a></td>
+		    </tr>
+		    {% endfor %}
+		  </tbody>
+		</table>
+	</div>
+</section>
