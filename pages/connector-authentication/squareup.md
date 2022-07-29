@@ -63,11 +63,9 @@ To set up your Squareup (OAuth) connector within your Cyclr console:
 2. Select **Connectors** > **Application Connector Library** at the top of the page.
 3. Use the search box to find the Squareup (OAuth) connector.
 4. Select the **Setup Required** icon.
-5. Enter the below values, omitting this step will allow you to use different settings for each account on installation:
-   | Value | Description |
-   | :---------------- | :---------------------------------------- |
-   | **Client ID** | The client ID of your Squareup account. |
-   | **Client Secret** | The client secret of your Squareup account. |
+5. Enter the below values, omitting this step will allow you to use different settings for each account on installation:   
+  * **Client ID**  The client ID of your Squareup account.
+  * **Client Secret**  The client secret of your Squareup account. 
 6. Select **Save Changes**.
 
 
