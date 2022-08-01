@@ -5,15 +5,13 @@ permalink: batchdialer-connector
 tags: [connector]
 ---
 
-## Creating an API Token
+## Obtaining your API Key
 
-To authenticate the BatchDialer connector you will need an API token/key.
-
-To retrieve the API token:
+To authenticate the BatchDialer connector you will need an API Key. To retrieve this:
 
 1. Navigate to the BatchDialer settings section by clicking on the user icon at the top right of the screen
 
-2. Click **Integrations**. You will see the **Custom Integration**. Click this option to view the API token
+2. Click **Integrations**. You will see the **Custom Integration**. Click this option to view the API Key
 
 ### Connector Setup
 
