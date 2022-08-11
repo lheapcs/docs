@@ -17,4 +17,4 @@ When installing a Kustomer Connector within Cyclr, enter the following value:
 
 * **API key**
 
-For more information go to https://help.kustomer.com/outbound-webhooks-rkUQvela8
+See [the Kustomer documentation](https://help.kustomer.com/outbound-webhooks-rkUQvela8) for more details.
