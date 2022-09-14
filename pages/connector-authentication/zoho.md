@@ -32,9 +32,16 @@ You can find your **Service Domain** within your Cyclr Console from the **Settin
 
 ### Connector Setup ###
 
-Once you have your Client ID and Client Secret from Zoho, go to your Cyclr Console then Connectors > Application Connector Library, search for **Zoho CRM**, click the Padlock button next to it and set them so they're used when installing the Connector.
+Once you have your Client ID and Client Secret from Zoho, go to your Cyclr Console then Connectors > Application Connector Library, search for **Zoho CRM**, click the Padlock button next to it and set them so they're used every time when installing the Connector.
 
 ## Scopes
 The scopes are defaulted to "ZohoCRM.modules.ALL,ZohoCRM.users.ALL,ZohoCRM.org.ALL,ZohoCRM.settings.roles.ALL", however you can enter your own scopes if you wish to restrict the connectors access further.
 
 See Zoho's documentation [here](https://www.zoho.com/crm/developer/docs/api/v2/scopes.html) on available scopes.
+
+
+
+## Domain property
+When installing a **Zoho CRM** Connector, use the domain part of the URL shown in the web browser when signed into the Zoho CRM account.
+
+If working with a Zoho CRM Plus subscription, the Domain should be in the format ```https://crm.zoho.com``` as normal, and not ```https://crmplus.zoho.com```.
