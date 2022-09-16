@@ -21,7 +21,7 @@ To set a Connector as using Paging, you can use the following Connector-level pr
 
 Note that the default for ourbound paging of 'false' at the Connector level.
  
-These patrameters can be overriden and adjusted at the method level.
+These parameters can be overriden and adjusted at the method level.
 
 | Method Property | Description |
 | --- | --- |
@@ -35,7 +35,7 @@ If values are not set at the method level they are inherited from those specifie
 
 ## Inbound Paging Control Variables
 
-It implement inbound paging Cyclr use the following variables.
+When implementing inbound paging in Cyclr, use the following variables.
 
 | Variable | Description |
 | --- | --- |
@@ -50,7 +50,7 @@ It implement inbound paging Cyclr use the following variables.
 
 ### Example 1 - API using page number and page size
 
-In this example the API requires the query sting to include the parameters 'page' and 'limit'.  Other APIs might use different names for these concepts.
+In this example the API requires the query string to include the parameters 'page' and 'limit'.  Other APIs might use different names for these concepts.
 
 | Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hidden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
