@@ -8,7 +8,7 @@ tags: [connector]
 
 # OSS setup
 To authenticate the OSS connector, you will need a valid `X-Token` and base `URL`.
-To authenticate the connector, please follow the steps below:
+To obtain these, please follow the steps below:
 ### 1. Retrieve a valid `X-Token`
 Request a valid `X-Token` from the partner.
 ### 2. Retrieve a valid `URL`
