@@ -20,7 +20,9 @@ Log into the MX dashboard found [here](https://dashboard.mx.com).
 
 On the home page of the dashboard, find the available `Client ID` and `API Key` seen under **Your Account** in either the **Development** or **Production** sections, depending on which environment you wish to authenticate.
 
-### 3. Allow the cyclr IP address to access MX by adding the server to MX Whitelist. https://docs.cyclr.com/cyclr-ip-allowlist
+### 3. Allow the Cyclr IP address to access MX 
+
+Add the Cyclr servers IP to MX Whitelist. https://docs.cyclr.com/cyclr-ip-allowlist (note they only allow US server IP's)
 
 
 ## Authenticate the connector
