@@ -6,7 +6,7 @@ tags: [connector]
 
 ---
 
-# MX setup
+## MX setup
 
 To authenticate the MX connector, you will need a valid `Client ID` and `API Key`.
 
@@ -20,7 +20,10 @@ Log into the MX dashboard found [here](https://dashboard.mx.com).
 
 On the home page of the dashboard, find the available `Client ID` and `API Key` seen under **Your Account** in either the **Development** or **Production** sections, depending on which environment you wish to authenticate.
 
-### 3. Authenticate the connector
+### 3. Allow the cyclr IP address to access MX by adding the server to MX Whitelist. https://docs.cyclr.com/cyclr-ip-allowlist
+
+
+## Authenticate the connector
 
 You can now use the `Client ID` and `API Key` to authenticate your MX connector. First select either the **Development URL** or **Production URL** depending on which environment you wish to authenticate. Click next. Then enter the corresponding `Client ID` and `API Key` and click next.
 
