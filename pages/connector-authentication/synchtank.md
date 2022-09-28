@@ -1,7 +1,7 @@
 ---
-title: Synchtank
+title: Synchtank Authentication
 sidebar: cyclr_sidebar
-permalink: synchtank
+permalink: synchtank-connector
 tags: [connector]
 ---
 
