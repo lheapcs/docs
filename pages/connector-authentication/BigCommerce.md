@@ -36,9 +36,9 @@ To setup the BigCommerce connector within your Cyclr console:
 
 ## Account setup
 
-You will be asked for the following values when installing the BigCommerce connector within an account:
+If you did not enter them in step 5 above, you will be asked for the following values when installing the BigCommerce connector within an account:
 
 | Value            | Description                                                  |
 | :--------------- | :----------------------------------------------------------- |
-| **Access Token** | The Access token of your BigCommerce account. If you did not enter this in step 5 above. |
-| **Base URL**     | The Base URL of the API instance. If you did not enter this in step 5 above. |
+| **Access Token** | The Access token of your BigCommerce account. |
+| **Base URL**     | The Base URL of the API instance. |
