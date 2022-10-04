@@ -37,6 +37,10 @@ If values are not set at the method level they are inherited from those specifie
 
 When implementing inbound paging in Cyclr, use the following variables.
 
+Note. These should be entered in the first available **Parameter Value** (see image below) rather than the Default Value.
+
+![Where to enter Paging Params](./images/first-field-value.png)
+
 | Variable | Description |
 | --- | --- |
 | CYCLR_PAGE_NUMBER | Cyclr will use the current page number it’s requesting here as it iterates through them. Use this with APIs that use page numbers and “number of objects to retrieve” values. The initial value will be one. |
