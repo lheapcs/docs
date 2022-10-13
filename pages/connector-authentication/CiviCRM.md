@@ -20,7 +20,3 @@ When installing a **CiviCRM** Connector within Cyclr, enter the following values
 **Base Url**: The CiviCRM account URL.
 
 **API Key**: The CiviCRM API Key.
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
