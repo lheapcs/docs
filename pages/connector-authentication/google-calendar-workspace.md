@@ -12,7 +12,7 @@ The actions in this guide require a Google Workspace account with an admin user.
 * Navigate to the [services account page](https://console.developers.google.com/iam-admin/serviceaccounts).
 * Click **Create Service Account** and enter an appropriate name and description. 
 * On the **Grant users access to this service** screen, create a key and select the **JSON** format.
-* Keep this file safe, if foreign users gain access to this file they are able to perform admin actions in your Google Workspace account. We will need it later. This will also be the only time that you can download the file.
+* Keep this file safe, as its contents can enable anyone to perform admin actions in your Google Workspace account. We will need it later. This will also be the only time that you can download the file.
  
 #### Enable domain-wide delegation
 Now we need to enable Google Workspace domain-wide delegation so that you are able to access your users Google Calendar data.
