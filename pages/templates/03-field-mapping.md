@@ -48,5 +48,3 @@ These Mergefields can be used to map fields directly and as part of the content 
 ```
 The last run was {% raw %}{{LastSuccessfulRunDate}}{% endraw %}.
 ```
-
-[How to Test your Cycles](./testing-cycles)
