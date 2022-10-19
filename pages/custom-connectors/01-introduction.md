@@ -9,7 +9,7 @@ tags: [connector-creation]
 
 A custom connector allows you to integrate apps that aren’t in our [connector library](http://cyclr.com/connectors/). You can even add connectors for your own private apps and websites. Our Connector Manager makes this task quicker and easier to maintain than writing a traditional coded integration.  Note that not all price plans include access to the Custom Connector builder or that access is subject to an additional fee
 
-A connector a standardised definition in a propriatory Cyclr format of the methods and fields of an API. Once created Cyclr takes care of everthing that is needed to work with an API including:
+Connector is the standardised name for a proprietary Cyclr format of the methods and fields of an API. Once created Cyclr takes care of everything that is needed to work with an API including:
 
 | Property | Description | 
 | --- | --- |
